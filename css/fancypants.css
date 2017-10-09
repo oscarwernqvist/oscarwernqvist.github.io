@@ -43,6 +43,14 @@ p {
     
 }
 
+.img-circle2 {
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    transform: rotate(135deg);
+    animation: popout 10s ease-in-out infinite;
+}
+
 ul {
     text-align: left
     
@@ -64,6 +72,33 @@ ul {
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
+    }
+}
+
+@keyframes popout {
+    0% {
+        top: -10rem;
+        left: -10rem;
+    }
+    
+    10% {
+        top: -1rem;
+        left: -3rem;
+    }
+    
+    15% {
+        top: -1rem;
+        left: -3rem;
+    }
+    
+    25% {
+        top: -10rem;
+        left: -10rem;
+    }
+    
+    100% {
+        top: -10rem;
+        left: -10rem;
     }
 }
 
