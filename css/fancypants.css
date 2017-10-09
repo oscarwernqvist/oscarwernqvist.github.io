@@ -43,6 +43,14 @@ p {
     
 }
 
+.img-circle2 {
+    position: absolute;
+    top: -10rem;
+    left: -10rem;
+    transform: rotate(135deg);
+    animation: popout 10s ease-in-out infinite;
+}
+
 ul {
     text-align: left
     
