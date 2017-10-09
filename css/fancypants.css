@@ -67,6 +67,33 @@ ul {
     }
 }
 
+@keyframes popout {
+    0% {
+        top: -10rem;
+        left: -10rem;
+    }
+    
+    10% {
+        top: -1rem;
+        left: -3rem;
+    }
+    
+    15% {
+        top: -1rem;
+        left: -3rem;
+    }
+    
+    25% {
+        top: -10rem;
+        left: -10rem;
+    }
+    
+    100% {
+        top: -10rem;
+        left: -10rem;
+    }
+}
+
 body {
     background-color: oldlace;
 }
