@@ -108,4 +108,18 @@ body {
     background-color: oldlace;
 }
 
-figure {}
+.bottomtext {
+    text-align: bottom;
+    text-decoration: overline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    margin: 50px auto;
+    width: 300px;
+
+}
+
+.finfarg{
+    color: darkkhaki; 
+
+}
+
