@@ -48,7 +48,7 @@ p {
     top: -10rem;
     left: -10rem;
     transform: rotate(135deg);
-    animation: popout 10s ease-in-out infinite;
+    animation: popout 8s ease-in-out infinite;
 }
 
 ul {
