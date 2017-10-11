@@ -7,22 +7,34 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../css/fancypants.css" type="text/css">
+    <script src="../js/javayo.js"></script>
 </head>
 
 <body class="halloween">
-    <audio preload="auto" autoplay loop>
+    <audio preload="auto" autoplay loop id="ghostBuster">
         <source src="../muziko/Ghostbusters.mp3" type="audio/mpeg"></source>
     </audio>
+    <script> 
+        var audio = document.getElementById("ghostBuster");
+        audio.volume = 0.6; 
+    </script>
+
+    <audio id="audio_play">
+        <source src="../muziko/evilLaugh.mp3" type="audio/mpeg" />
+    </audio>
+
 
     <h1 class="spooky">
         Bienvenue dans la zone effrayante
-        </h1>
-    <img class="img-circle3" src="../img/jens_vampyr.png" alt="Jens Harro 'Legenden'" align="middle">
+    </h1>
+
+
+    <img class="img-circle3" src="../img/jens_vampyr.png" alt="Jens Harro 'Legenden'" align="middle" onClick="document.getElementById('audio_play').play(); return false;">
+
 
     <h6 class="bottomtext finfarg">
         Des questions et des plaintes:
-        <a class="finfarg" href="mailto:oscar.wernqvist@itggot.se?Subject=Jag%20älskar%20Jens"
-            target="_top">oscar.wernqvist@itggot.se</a>
+        <a class="finfarg" href="mailto:oscar.wernqvist@itggot.se?Subject=Jag%20älskar%20Jens" target="_top">oscar.wernqvist@itggot.se</a>
     </h6>
 
 </body>
