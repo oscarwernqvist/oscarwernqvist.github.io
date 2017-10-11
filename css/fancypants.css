@@ -16,17 +16,15 @@ h2 {
     font-family: "Comic Sans MS", Helvetica, sans-serif;
     font-size: 24px;
     text-align: center;
-    
 }
 
 p {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
     text-align: left;
-    margin:  100px 20%;
+    margin: 100px 20%;
     min-width: 400px;
     max-width: 1000px
-
 }
 
 .img-circle {
@@ -42,7 +40,6 @@ p {
     -webkit-animation: spin 4s linear infinite;
     -moz-animation: spin 4s linear infinite;
     animation: spin 4s linear infinite;
-    
 }
 
 .img-circle2 {
@@ -55,7 +52,6 @@ p {
 
 ul {
     text-align: left
-    
 }
 
 @-moz-keyframes spin {
@@ -82,22 +78,18 @@ ul {
         top: -10rem;
         left: -10rem;
     }
-    
     10% {
         top: -1rem;
         left: -3rem;
     }
-    
     15% {
         top: -1rem;
         left: -3rem;
     }
-    
     25% {
         top: -10rem;
         left: -10rem;
     }
-    
     100% {
         top: -10rem;
         left: -10rem;
@@ -115,11 +107,13 @@ body {
     font-size: 14px;
     margin: 50px auto;
     width: 300px;
-
 }
 
-.finfarg{
-    color: darkkhaki; 
-
+.finfarg {
+    color: darkkhaki;
 }
 
+.Halloween{
+    background-color: midnightblue;
+
+}
