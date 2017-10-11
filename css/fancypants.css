@@ -60,9 +60,9 @@ p {
     border-color: darkred;
     width: 534px;
     height: 534px;
-    -webkit-animation: spin 1.904s linear infinite;
-    -moz-animation: spin 1.904s linear infinite;
-    animation: spin 1.904s linear infinite;
+    -webkit-animation: spin 3.809s linear infinite;
+    -moz-animation: spin 3.809s linear infinite;
+    animation: spin 3.809s linear infinite;
 }
 
 ul {
