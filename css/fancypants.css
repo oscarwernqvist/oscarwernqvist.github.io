@@ -150,6 +150,7 @@ body {
 
 div#lightning {
     background-color: white;
+    pointer-events: none;
     opacity: 0;
     animation: lightning 8s ease-in-out infinite;
     z-index: 1000;
