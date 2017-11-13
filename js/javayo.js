@@ -11,7 +11,7 @@ document.getElementsByTagName('p')[0].innerHTML += "<br><br>";
 var generated_txt = arr[Math.floor(Math.random() * arr.length)];
 while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Math.floor(Math.random() * arr.length)];
 
-(function type(text, i) {
+function type(text, i) {
 	document.getElementsByTagName('p')[0].innerHTML += text[i];
 	
 	i++;
@@ -23,7 +23,7 @@ while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Ma
 		var new_text = arr[Math.floor(Math.random() * arr.length)];
 		if(new_text[0] == new_text[0].toUpperCase()) {
 			document.getElementsByTagName('p')[0].innerHTML += '. ';
-			if(Math.floor(Math.random() * 5) == 4) document.getElementsByTagName('p')[0].innerHTML += "<br><br>";
+			if(Math.floor(Math.random() * 4) == 2) document.getElementsByTagName('p')[0].innerHTML += "<br><br>";
         } else if(Math.round(Math.random())) {
 			document.getElementsByTagName('p')[0].innerHTML += ', ';
         } else {
@@ -32,4 +32,6 @@ while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Ma
 		
 		setTimeout(type, Math.floor(Math.random() * 80), new_text, 0);
     }
-})(generated_txt, 0);
+}
+
+setTimeout(type, Math.floor(Math.random() * 8192), generated_txt, 0);
