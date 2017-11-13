@@ -15,6 +15,7 @@ while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Ma
 	document.getElementsByTagName('p')[0].innerHTML += text[i];
 	
 	i++;
+	if(text[i] == '<') while(text[i - 1] != '>') i++; // ignorera <br>
 	
 	if(i < text.length) {
 		setTimeout(type, Math.floor(Math.random() * 80), text, i);
