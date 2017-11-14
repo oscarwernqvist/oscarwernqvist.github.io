@@ -34,6 +34,4 @@ window.onload = function() {
 			setTimeout(type, Math.floor(Math.random() * 80), new_text, 0);
 	    }
 	}
-
-	setTimeout(type, Math.floor(Math.random() * 8192), generated_txt, 0);
 }
