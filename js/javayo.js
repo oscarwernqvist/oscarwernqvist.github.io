@@ -9,9 +9,6 @@ window.onload = function() {
 	var arr = str.split(/\. |, | et /);
 	document.getElementsByTagName('p')[0].innerHTML += "<br><br>";
 
-	var generated_txt = arr[Math.floor(Math.random() * arr.length)];
-	while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Math.floor(Math.random() * arr.length)];
-
 	function type(text, i) {
 		document.getElementsByTagName('p')[0].innerHTML += text[i];
 
