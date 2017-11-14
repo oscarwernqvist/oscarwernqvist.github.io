@@ -3,7 +3,7 @@ snd.play();
 snd.currentTime = 0; //så den spelar skrattet en gång först
 
 // Jens oändliga dag
-function type(text, i) {
+window.type = function type(text, i) {
 	document.getElementsByTagName('p')[0].innerHTML += text[i];
 
 	i++;
