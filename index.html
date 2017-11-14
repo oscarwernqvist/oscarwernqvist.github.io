@@ -67,7 +67,7 @@
         document.getElementsByTagName('p')[0].innerHTML += '<br><br>';
         var generated_txt = arr[Math.floor(Math.random() * arr.length)];
         while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Math.floor(Math.random() * arr.length)];
-        type(generated_txt, 0);
+        window.type(generated_txt, 0);
         this.outerHTML = '';
     ">Plus de le voyage</button>
 
