@@ -1,37 +1,39 @@
-var snd = new Audio("../muziko/evilLaugh.mp3");
-snd.play();
-snd.currentTime = 0; //så den spelar skrattet en gång först
+window.onload = function() {
+	var snd = new Audio("../muziko/evilLaugh.mp3");
+	snd.play();
+	snd.currentTime = 0; //så den spelar skrattet en gång först
 
-// Jens oändliga dag
-var str = document.getElementsByTagName('p')[0].innerHTML.substring(82);
+	// Jens oändliga dag
+	var str = document.getElementsByTagName('p')[0].innerHTML.substring(82);
 
-var arr = str.split(/\. |, | et /);
-document.getElementsByTagName('p')[0].innerHTML += "<br><br>";
+	var arr = str.split(/\. |, | et /);
+	document.getElementsByTagName('p')[0].innerHTML += "<br><br>";
 
-var generated_txt = arr[Math.floor(Math.random() * arr.length)];
-while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Math.floor(Math.random() * arr.length)];
+	var generated_txt = arr[Math.floor(Math.random() * arr.length)];
+	while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Math.floor(Math.random() * arr.length)];
 
-function type(text, i) {
-	document.getElementsByTagName('p')[0].innerHTML += text[i];
-	
-	i++;
-	if(text[i] == '<') while(text[i - 1] != '>') i++; // ignorera <br>
-	
-	if(i < text.length) {
-		setTimeout(type, Math.floor(Math.random() * 80), text, i);
-    } else {
-		var new_text = arr[Math.floor(Math.random() * arr.length)];
-		if(new_text[0] == new_text[0].toUpperCase()) {
-			document.getElementsByTagName('p')[0].innerHTML += '. ';
-			if(Math.floor(Math.random() * 4) == 2) document.getElementsByTagName('p')[0].innerHTML += "<br><br>";
-        } else if(Math.round(Math.random())) {
-			document.getElementsByTagName('p')[0].innerHTML += ', ';
-        } else {
-			document.getElementsByTagName('p')[0].innerHTML += " et ";
-        }
-		
-		setTimeout(type, Math.floor(Math.random() * 80), new_text, 0);
-    }
+	function type(text, i) {
+		document.getElementsByTagName('p')[0].innerHTML += text[i];
+
+		i++;
+		if(text[i] == '<') while(text[i - 1] != '>') i++; // ignorera <br>
+
+		if(i < text.length) {
+			setTimeout(type, Math.floor(Math.random() * 80), text, i);
+	    } else {
+			var new_text = arr[Math.floor(Math.random() * arr.length)];
+			if(new_text[0] == new_text[0].toUpperCase()) {
+				document.getElementsByTagName('p')[0].innerHTML += '. ';
+				if(Math.floor(Math.random() * 4) == 2) document.getElementsByTagName('p')[0].innerHTML += "<br><br>";
+		} else if(Math.round(Math.random())) {
+				document.getElementsByTagName('p')[0].innerHTML += ', ';
+		} else {
+				document.getElementsByTagName('p')[0].innerHTML += " et ";
+		}
+
+			setTimeout(type, Math.floor(Math.random() * 80), new_text, 0);
+	    }
+	}
+
+	setTimeout(type, Math.floor(Math.random() * 8192), generated_txt, 0);
 }
-
-setTimeout(type, Math.floor(Math.random() * 8192), generated_txt, 0);
