@@ -161,6 +161,14 @@ div#lightning {
     height: 100%;
 }
 
+button {
+    margin: 0 auto;
+    height: 50px;
+    margin-bottom: 100px;
+    display: inherit;
+    width: 300px;
+}
+
 @keyframes lightning {
     0% {
         opacity: 0;
