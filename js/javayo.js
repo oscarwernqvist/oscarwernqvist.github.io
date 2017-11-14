@@ -4,11 +4,6 @@ window.onload = function() {
 	snd.currentTime = 0; //så den spelar skrattet en gång först
 
 	// Jens oändliga dag
-	var str = document.getElementsByTagName('p')[0].innerHTML.substring(82);
-
-	var arr = str.split(/\. |, | et /);
-	document.getElementsByTagName('p')[0].innerHTML += "<br><br>";
-
 	function type(text, i) {
 		document.getElementsByTagName('p')[0].innerHTML += text[i];
 
