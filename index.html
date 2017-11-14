@@ -60,7 +60,16 @@
 
     </p>
     
-    <button onclick="var generated_txt = arr[Math.floor(Math.random() * arr.length)];while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Math.floor(Math.random() * arr.length)];type(generated_txt, 0);this.outerHTML = '';">Plus de le voyage</button>
+    <button onclick="
+        var str = document.getElementsByTagName('p')[0].innerHTML.substring(82);
+
+        var arr = str.split(/\. |, | et /);
+        document.getElementsByTagName('p')[0].innerHTML += '<br><br>';
+        var generated_txt = arr[Math.floor(Math.random() * arr.length)];
+        while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Math.floor(Math.random() * arr.length)];
+        type(generated_txt, 0);
+        this.outerHTML = '';
+    ">Plus de le voyage</button>
 
     <figure>
         <img class="img-circle" src="img/jens_cowboy.png" alt="Jens Harro 'Legenden'" align="middle">
