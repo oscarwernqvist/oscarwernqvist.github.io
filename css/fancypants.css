@@ -269,9 +269,9 @@ button {
 .fallingJens span {
     display: inline-block;
     width: 200px;
-    height: 200px;
+    height: 250px;
     margin: -280px 40px 54px -34px;
-    background: url(../img/jens2.png);
+    background: url(../img/jens_jul.png);
     -webkit-animation: fallingJens 10s infinite linear;
     -moz-animation: fallingJens 10s infinite linear;
     opacity: 0;
@@ -338,10 +338,10 @@ button {
 
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1200px) {
     .fallingJens span {
         width: 100px;
-        height: 80px;
+        height: 100px;
         background-size: 100%;
         
         
