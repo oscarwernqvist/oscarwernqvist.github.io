@@ -16,11 +16,11 @@ window.type = function type(text, i) {
 		if(new_text[0] == new_text[0].toUpperCase()) {
 			document.getElementsByTagName('p')[0].innerHTML += '. ';
 			if(Math.floor(Math.random() * 4) == 2) document.getElementsByTagName('p')[0].innerHTML += "<br><br>";
-	} else if(Math.round(Math.random())) {
+		} else if(Math.round(Math.random())) {
 			document.getElementsByTagName('p')[0].innerHTML += ', ';
-	} else {
+		} else {
 			document.getElementsByTagName('p')[0].innerHTML += " et ";
-	}
+		}
 
 		setTimeout(type, Math.floor(Math.random() * 80), new_text, 0);
     }
