@@ -246,7 +246,7 @@ button {
     height: 100%;
     position: absolute;
     left: 0%;
-    background: url(../img/trump-tower.jpg);
+    background: url(../img/jens_tower.jpg);
     background-position: top; 
     background-repeat: no-repeat;
     background-attachment: absolute;
@@ -256,7 +256,7 @@ button {
 .jultext {
     font-family: 'Lobster', cursive;
     position: fixed;
-    top: 12%;
+    top: 10%;
     left: 32%;
     animation: pulse 0s infinite;
     animation-direction: alternate;
@@ -357,14 +357,14 @@ button {
         animation: pulse 0s infinite;
         animation-direction: alternate;
         animation-duration: 5s;
-        font-size: 3em;
+        font-size: 5em;
         transform: rotate(-5deg);
         
     }
     
     #container {
     background-repeat: repeat-y	;
-    
+    background-size: 200%;
     }
     
 }    
