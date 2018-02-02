@@ -367,4 +367,18 @@ button {
     background-size: 200%;
     }
     
+    .lefanclub {
+        font-size: 14px;
+        padding: 3%;
+
+    }
+
+    h2{
+        font-size: 14px;
+    }
+
+    p{
+        font-size: 11px;
+    }
 }    
+
