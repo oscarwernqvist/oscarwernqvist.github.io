@@ -6,17 +6,14 @@ Blekgrön: #99cc99;
 Vinröd: #663333;
 */
 
-
-.main{
+.main {
     background-color: #CCCCCC;
     width: 1200px;
-
 }
 
 .nv {
     display: grid;
     grid-area: nv;
-    
 }
 
 .n1 {
@@ -36,12 +33,12 @@ Vinröd: #663333;
 
 article {
     background-color: #CCCCCC;
-    border: 2px ;
+    border: 2px;
     border-radius: 20px;
     border-style: solid;
     border-color: #999999;
     margin-top: 20px;
-
+    padding: 10px;
 }
 
 .a1 {
@@ -52,15 +49,52 @@ article {
     grid-area: a2;
 }
 
+.a1d1 {
+    background-color: #99cc99;
+}
+
+.a2d1 {
+    background-color: #99cc99;
+}
+
+.merinfo {
+    height: 30px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: #99cc99;
+    color: #666666;
+    position: relative;
+    top: 40%;
+    left: 65%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.merinfo:hover {
+    text-decoration: underline;
+}
+
 h2 {
     font-family: 'Comfortaa', cursive;
     text-align: center;
     font-size: 1.5em;
 }
 
-.active{
+h4 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.875em;
+}
+
+h3 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.875em;
+    color: #663333;
+}
+
+.active {
     background-color: #CCCCCC;
-    border-top: 2px ;
+    border-top: 2px;
     border-bottom: 0px;
     border-left: 2px;
     border-right: 2px;
@@ -75,7 +109,7 @@ h2 {
     text-decoration: underline;
 }
 
-.inactive{
+.inactive {
     background-color: #999999;
     border: 2px;
     border-top-left-radius: 20px;
@@ -85,53 +119,39 @@ h2 {
     color: #666666;
 }
 
-
-
-
 .inactive:hover {
     background-color: #CCCCCC;
     color: #663333;
     text-decoration: underline;
-    
 }
 
 @media all and (max-width: 800px) {
-    .main{
+    .main {
         display: grid;
         width: 100%;
         Height: 600px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(11, 1fr);
         grid-template-areas: 
-        "nv nv nv nv nv nv" /* 1 */
-        ". . . . . ."       /* 2 */
-        ". a1 a1 a1 a1 ."   /* 3 */
-        ". a1 a1 a1 a1 ."   /* 4 */
-        ". a1 a1 a1 a1 ."   /* 5 */
-        ". a1 a1 a1 a1 ."   /* 6 */
-        ". a2 a2 a2 a2 ."   /* 7 */
-        ". a2 a2 a2 a2 ."   /* 8 */
-        ". a2 a2 a2 a2 ."   /* 9 */
-        ". a2 a2 a2 a2 ."   /* 10 */
-        ". . . . . ."       /* 11 */
+        "nv nv nv nv nv nv"/* 1 */
+        ". . . . . ."/* 2 */
+        ". a1 a1 a1 a1 ."/* 3 */
+        ". a1 a1 a1 a1 ."/* 4 */
+        ". a1 a1 a1 a1 ."/* 5 */
+        ". a1 a1 a1 a1 ."/* 6 */
+        ". a2 a2 a2 a2 ."/* 7 */
+        ". a2 a2 a2 a2 ."/* 8 */
+        ". a2 a2 a2 a2 ."/* 9 */
+        ". a2 a2 a2 a2 ."/* 10 */
+        ". . . . . ."/* 11 */
         ;
     }
-
-    .nv{
+    .nv {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
-        grid-template-areas:
-        "n1 n2 n3"
-        ;
+        grid-template-areas: "n1 n2 n3";
     }
-
-    
-
-    body{
+    body {
         background-color: #CCCCCC;
-
     }
-
-
-
 }
