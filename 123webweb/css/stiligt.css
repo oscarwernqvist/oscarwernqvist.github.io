@@ -67,8 +67,6 @@ article {
     top: 40%;
     left: 65%;
     text-align: center;
-    display: table-cell;
-    vertical-align: middle;
 }
 
 .merinfo:hover {
