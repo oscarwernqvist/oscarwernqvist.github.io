@@ -17,19 +17,19 @@ Vinröd: #663333;
     grid-area: nv;
 }
 
-.n1 {
+#n1 {
     grid-area: n1;
-    transition: 0.5s linear;
+    transition: 0.2s linear;
 }
 
-.n2 {
+#n2 {
     grid-area: n2;
-    transition: 0.5s linear;
+    transition: 0.2s linear;
 }
 
-.n3 {
+#n3 {
     grid-area: n3;
-    transition: 0.5s linear;
+    transition: 0.2s linear;
 }
 
 article {
@@ -132,17 +132,17 @@ h3 {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(11, 1fr);
         grid-template-areas: 
-        "nv nv nv nv nv nv"/* 1 */
-        ". . . . . ."/* 2 */
-        ". a1 a1 a1 a1 ."/* 3 */
-        ". a1 a1 a1 a1 ."/* 4 */
-        ". a1 a1 a1 a1 ."/* 5 */
-        ". a1 a1 a1 a1 ."/* 6 */
-        ". a2 a2 a2 a2 ."/* 7 */
-        ". a2 a2 a2 a2 ."/* 8 */
-        ". a2 a2 a2 a2 ."/* 9 */
-        ". a2 a2 a2 a2 ."/* 10 */
-        ". . . . . ."/* 11 */
+        "nv nv nv nv nv nv"     /* 1 */
+        ". . . . . ."           /* 2 */
+        ". a1 a1 a1 a1 ."       /* 3 */
+        ". a1 a1 a1 a1 ."       /* 4 */
+        ". a1 a1 a1 a1 ."       /* 5 */
+        ". a1 a1 a1 a1 ."       /* 6 */
+        ". a2 a2 a2 a2 ."       /* 7 */
+        ". a2 a2 a2 a2 ."       /* 8 */
+        ". a2 a2 a2 a2 ."       /* 9 */
+        ". a2 a2 a2 a2 ."       /* 10 */
+        ". . . . . ."           /* 11 */
         ;
     }
     .nv {
