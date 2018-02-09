@@ -62,14 +62,17 @@ article {
 
 #pertan {
     grid-area: pt;
-    padding: 0px;
+    padding: 4%;
     
 }
 
 .profileimg {
     max-width:100%;
     max-height: 100%;
-    object-fit: contain;
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #999999;
 }
 
 .merinfo {
