@@ -8,7 +8,7 @@ $(document).ready(() => {
         $('#n1').attr('class', 'active');
         $('#n2').attr('class', 'inactive');
         $('#n3').attr('class', 'inactive');
-       
+        
     });
 
     $('#n2').on('click', () => {
@@ -17,6 +17,7 @@ $(document).ready(() => {
         $('#n3').attr('class', 'inactive');
         $('.minagym').show();
         $('.minavanner').hide()
+        $('.mvmain').attr('class', 'main');
     });
 
     $('#n3').on('click', () => {
@@ -25,6 +26,8 @@ $(document).ready(() => {
         $('#n1').attr('class', 'inactive');
         $('.minagym').hide();
         $('.minavanner').show()
+        $('.main').attr('class', 'mvmain');
+        
     });
 
 

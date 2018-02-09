@@ -6,6 +6,8 @@ Blekgrön: #99cc99;
 Vinröd: #663333;
 */
 
+
+
 .main {
     background-color: #CCCCCC;
     width: 1200px;
@@ -56,6 +58,18 @@ article {
 
 #a2d1 {
     background-color: #99cc99;
+}
+
+#pertan {
+    grid-area: pt;
+    padding: 0px;
+    
+}
+
+.profileimg {
+    max-width:100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .merinfo {
@@ -145,6 +159,28 @@ h3 {
         ". . . . . ."           /* 11 */
         ;
     }
+
+    .mvmain {
+        display: grid;
+        width: 100%;
+        Height: 600px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-areas: 
+        "nv nv nv nv nv nv"     /* 1 */
+        ". . . . . ."           /* 2 */
+        ". pt pt pt pt ."       /* 3 */
+        ". pt pt pt pt ."       /* 4 */
+        ". pt pt pt pt ."       /* 5 */
+        ". pt pt pt pt ."       /* 6 */
+        ". pt pt pt pt ."       /* 7 */
+        ". . . . . ."           /* 8 */
+        ". . . . . ."           /* 9 */
+        ". . . . . ."           /* 10 */
+        ". . . . . ."           /* 11 */
+        ;
+    }
+
     .nv {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
