@@ -162,6 +162,16 @@ h3 {
         Height: 600px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(11, 1fr);
+    }
+
+
+    /* Mina Gym - main */    
+    .mgmain {
+        display: grid;
+        width: 100%;
+        Height: 600px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(11, 1fr);
         grid-template-areas: 
         "nv nv nv nv nv nv"     /* 1 */
         ". . . . . ."           /* 2 */
@@ -175,8 +185,9 @@ h3 {
         ". a2 a2 a2 a2 ."       /* 10 */
         ". . . . . ."           /* 11 */
         ;
-    }
 
+    }
+    /* Mina vänner - main */ 
     .mvmain {
         display: grid;
         width: 100%;
@@ -191,7 +202,28 @@ h3 {
         ". pt pt pt pt ."       /* 5 */
         ". pt pt pt pt ."       /* 6 */
         ". pt pt pt pt ."       /* 7 */
-        ". pt pt pt pt ."           /* 8 */
+        ". pt pt pt pt ."       /* 8 */
+        ". . . . . ."           /* 9 */
+        ". . . . . ."           /* 10 */
+        ". . . . . ."           /* 11 */
+        ;
+    }
+    /* Hitta gym - main */
+    .hgmain{
+        display: grid;
+        width: 100%;
+        Height: 600px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-areas: 
+        "nv nv nv nv nv nv"     /* 1 */
+        ". . . . . ."           /* 2 */
+        ". . . . . ."           /* 3 */
+        ". . . . . ."           /* 4 */
+        ". . . . . ."           /* 5 */
+        ". . . . . ."           /* 6 */
+        ". . . . . ."           /* 7 */
+        ". . . . . ."           /* 8 */
         ". . . . . ."           /* 9 */
         ". . . . . ."           /* 10 */
         ". . . . . ."           /* 11 */

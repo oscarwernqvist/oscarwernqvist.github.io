@@ -3,13 +3,23 @@ $(document).ready(() => {
 
     /* ALLT PÅ DE ANDRA UNDERSIDORNA SKA GÖMMAS HÄR */
     $('.minavanner').hide()
+    $('.hittagym').hide()
     
+
+
+    /* Hitta Hym (hg)  */
     $('#n1').on('click', () => {
         $('#n1').attr('class', 'active');
         $('#n2').attr('class', 'inactive');
         $('#n3').attr('class', 'inactive');
-        
+        $('.hittagym').show()
+        $('.minavanner').hide()
+        $('.minagym').hide()
+        $('.mgmain').attr('class', 'hgmain');
+        $('.mvmain').attr('class', 'hgmain');
     });
+
+    /* Mina Gym (mg) */
 
     $('#n2').on('click', () => {
         $('#n2').attr('class', 'active');
@@ -17,8 +27,12 @@ $(document).ready(() => {
         $('#n3').attr('class', 'inactive');
         $('.minagym').show();
         $('.minavanner').hide()
-        $('.mvmain').attr('class', 'main');
+        $('.hittagym').hide()
+        $('.hgmain').attr('class', 'mgmain');
+        $('.mvmain').attr('class', 'mgmain');
     });
+
+    /* Mina Vänner (mv) */
 
     $('#n3').on('click', () => {
         $('#n3').attr('class', 'active');
@@ -26,13 +40,10 @@ $(document).ready(() => {
         $('#n1').attr('class', 'inactive');
         $('.minagym').hide();
         $('.minavanner').show()
-        $('.main').attr('class', 'mvmain');
-        
+        $('.mgmain').attr('class', 'mvmain');
+        $('.hgmain').attr('class', 'mvmain');
+        $('.hittagym').hide()
     });
 
 
-    /* $('.active').on('click', () => {
-        $('.inactive').toggle();
-      });
-      */
 });
