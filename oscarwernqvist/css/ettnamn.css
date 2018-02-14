@@ -40,3 +40,12 @@ nav {
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-areas: ". om kt ."
 }
+
+.wip {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
+}
