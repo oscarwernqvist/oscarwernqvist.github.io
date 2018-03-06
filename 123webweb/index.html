@@ -8,11 +8,13 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="stylesheet" href="css/stiligt.css">
-    
+
 </head>
 
 <body>
     <main class="main mgmain">
+
+        <!--   Nav   -->
         <nav class="nv">
             <div class="inactive" id="n1">
                 <h2> Hitta Gym </h2>
@@ -24,30 +26,74 @@
                 <h2> Mina Vänner </h2>
             </div>
         </nav>
+
+        <!-- Mina Gym  -->
+
         <article class="minagym" id="a1">
-                <h3>Gym 1</h3>
+            <h3>Gym 1</h3>
             <div class="merinfo" id="a1d1">
                 <h4> Mer Info </h4>
             </div>
-            
+
         </article>
         <article class="minagym" id="a2">
-                <h3>Gym 2</h3>
-                
+            <h3>Gym 2</h3>
+
             <div class="merinfo" id="a2d1">
                 <h4> Mer info </h4>
             </div>
-            
+
         </article>
 
+        <!-- Mina Vänner -->
+
         <article class="minavanner" id="pertan">
+            <h3>Per Morberg</h3>
             <img src="../img/pertan.jpg" alt="Pertan" class="profileimg">
         </article>
 
         <form class="minavanner form">
             <input type="text" class="textinput" name="firstname" value="   Sök vänner">
-        </form> 
-          
+        </form>
+
+        <!-- Hitta Gym -->
+
+        <div class="hittagym filter">
+            <form class="hittagym form">
+                <input type="text" class="textinput" name="firstname" value="   Sök gym">
+            </form>
+
+            <select name="options1" class="options" id="options1">
+                <option value="Sortera efter">Sortera efter:</option>
+                <option value="Närmast">Närmast</option>
+                <option value="Billigast">Billigast</option>
+            </select>
+
+            <select name="options2" class="options" id="options2">
+                <option value="Alternativ">Alternativ</option>
+                <option value="Gemensamma Träningar">Gemensamma Träningar</option>
+                <option value="Bastu">Bastu</option>
+            </select>
+
+        </div>
+
+        <article class="hittagym sokresult" id="gym1">
+            <h3>
+                Gym 1
+            </h3>
+            <div class="merinfo" id="merinfogym1">
+                <h4> Mer info </h4>
+            </div>
+        </article>
+        
+        <article class="hittagym sokresult" id="gym2">
+            <h3>
+                Gym 2
+            </h3>
+            <div class="merinfo" id="merinfogym2">
+                <h4> Mer info </h4>
+            </div>
+        </article>
 
 
 
@@ -55,7 +101,8 @@
     </main>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 
 </html>
