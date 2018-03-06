@@ -4,7 +4,7 @@ $(document).ready(() => {
     /* ALLT PÅ DE ANDRA UNDERSIDORNA SKA GÖMMAS HÄR */
     $('.minavanner').hide()
     $('.hittagym').hide()
-    
+    $('.gym1').hide()
 
 
     /* Hitta Hym (hg)  */
@@ -17,6 +17,8 @@ $(document).ready(() => {
         $('.minagym').hide()
         $('.mgmain').attr('class', 'hgmain');
         $('.mvmain').attr('class', 'hgmain');
+        $('.g1main').attr('class', 'hgmain');
+        $('.gym1').hide();
     });
 
     /* Mina Gym (mg) */
@@ -30,6 +32,8 @@ $(document).ready(() => {
         $('.hittagym').hide()
         $('.hgmain').attr('class', 'mgmain');
         $('.mvmain').attr('class', 'mgmain');
+        $('.g1main').attr('class', 'mgmain');
+        $('.gym1').hide();
     });
 
     /* Mina Vänner (mv) */
@@ -42,8 +46,37 @@ $(document).ready(() => {
         $('.minavanner').show()
         $('.mgmain').attr('class', 'mvmain');
         $('.hgmain').attr('class', 'mvmain');
+        $('.g1main').attr('class', 'mvmain');
         $('.hittagym').hide()
+        $('.gym1').hide();
     });
+
+
+    /* Gym 1 */
+
+    $('#merinfogym1, #a1d1').on('click' , () => {
+        $('.minagym').hide();
+        $('.minavänner').hide();   
+        $('.hittagym').hide();
+        $('.gym1').show();
+        $('.mgmain').attr('class', 'g1main');
+        $('.hgmain').attr('class', 'g1main');
+        $('.mvmain').attr('class', 'g1main');
+    });
+
+
+
+    /* Options2 slide down meny   */
+
+    $('#options2menu').hide()
+    
+    $('#options2').on('click', () => {
+        $('#options2menu').slideToggle(100)
+
+    });
+
+
+
 
 
 });

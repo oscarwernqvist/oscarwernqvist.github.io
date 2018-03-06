@@ -42,6 +42,7 @@ article {
     border-color: #999999;
     margin-top: 20px;
     padding: 10px;
+    position: relative;
 }
 
 #a1 {
@@ -54,16 +55,16 @@ article {
 
 #a1d1 {
     background-color: #99cc99;
-    position: relative;
-    top: 40%;
-    left: 65%;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
 }
 
 #a2d1 {
     background-color: #99cc99;
-    position: relative;
-    top: 40%;
-    left: 65%;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
 }
 
 #pertan {
@@ -93,6 +94,13 @@ article {
 
 .merinfo:hover {
     text-decoration: underline;
+}
+
+p {
+    color: #666666;
+    font-family: 'Comfortaa', cursive;
+    font-size: 0.875em;
+
 }
 
 h2 {
@@ -160,6 +168,10 @@ h3 {
 }
 
 .filter{
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #999999;
     padding: 1%;
     grid-area: fl;
     display: grid;
@@ -183,24 +195,24 @@ h3 {
 
 #gym1 {
     grid-area: g1;
-    
+    position: relative;
 }
 
 #merinfogym1{
-    position: relative;
-    top: -10%;
-    left: 65%;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
 }
 
 #gym2 {
-
+    position: relative;
     grid-area: g2;
 }
 
-#merinfogym2 {
-    position: relative;
-    top: -10%;
-    left: 65%;
+#merinfogym2{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
 }
 
 .options{
@@ -208,9 +220,24 @@ h3 {
     border-radius: 20px;
     border-style: solid;
     border-color: #999999;
-    width: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
     height: 60%;
     font-family: 'Comfortaa', cursive;
+    
+}
+
+.options:after{
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #999999;
+
+}
+
+.gymbild {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #options1 {
@@ -219,6 +246,60 @@ h3 {
 
 #options2 {
     grid-area: o2;
+}
+
+#options2menu {
+    border-left: 2px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-top: 0px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #999999;
+    width: 30%;
+    height: 200px;
+    position: fixed;
+    display: none;
+}
+
+.kontakt {
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #999999;
+    margin-top: 2%;
+    padding: 2%;
+}
+
+.om {
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #999999;
+    margin-top: 2%;
+}
+
+#omgym1 {
+    grid-area: og1;
+}
+
+#kontaktgym1 {
+    grid-area: kg1;
+}
+
+.gymbild{
+    max-width:100%;
+    max-height: 70%;
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #999999;
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 1.5em;
+    color: #663333;
 }
 
 @media all and (max-width: 800px) {
@@ -288,12 +369,32 @@ h3 {
         "fl fl fl fl fl fl"     /* 4 */
         ". g1 g1 g1 g1 ."       /* 5 */
         ". g1 g1 g1 g1 ."       /* 6 */
-        ". . . . . ."           /* 7 */
+        ". g2 g2 g2 g2 ."           /* 7 */
         ". g2 g2 g2 g2 ."           /* 8 */
-        ". g2 g2 g2 g2 ."           /* 9 */
+        ". . . . . ."           /* 9 */
         ". . . . . ."           /* 10 */
         ". . . . . ."           /* 11 */
         ;
+    }
+
+
+    /* Gym 1 */
+
+    .g1main {
+            display: grid;
+            width: 100%;
+            Height: 600px;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 1fr repeat(5, 2fr);
+            grid-template-areas: 
+            "nv nv nv"        /* 1 */
+            "og1 og1 og1"         /* 2 */
+            "og1 og1 og1"         /* 3 */
+            "og1 og1 og1"         /* 4 */
+            ". kg1 ."           /* 5 */
+            ". . ." 
+            ;
+    
     }
 
     .nv {
