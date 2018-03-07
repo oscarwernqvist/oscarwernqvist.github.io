@@ -73,9 +73,15 @@ article {
     
 }
 
+#gw{
+    grid-area: gw;
+    padding: 4%;
+}
+
 .profileimg {
     max-width:100%;
     max-height: 80%;
+    width: 100px;
     border: 2px;
     border-radius: 20px;
     border-style: solid;
@@ -93,7 +99,7 @@ article {
 }
 
 .merinfo:hover {
-    text-decoration: underline;
+    background-color: #999999;
 }
 
 p {
@@ -112,6 +118,13 @@ h2 {
 h4 {
     font-family: 'Comfortaa', cursive;
     font-size: 0.875em;
+    position: absolute;
+    top: -40%;
+    left: 10%;
+}
+
+h4:hover {
+    text-decoration: underline;
 }
 
 h3 {
@@ -289,7 +302,7 @@ h3 {
 
 .gymbild{
     max-width:100%;
-    max-height: 70%;
+    max-height: 75%;
     border: 2px;
     border-radius: 20px;
     border-style: solid;
@@ -342,17 +355,17 @@ h1 {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(11, 1fr);
         grid-template-areas: 
-        "nv nv nv nv nv nv"     /* 1 */
-        ". . . . . ."           /* 2 */
-        ". tx tx tx tx ."       /* 3 */
-        ". pt pt pt pt ."       /* 4 */
-        ". pt pt pt pt ."       /* 5 */
-        ". pt pt pt pt ."       /* 6 */
-        ". pt pt pt pt ."       /* 7 */
-        ". pt pt pt pt ."       /* 8 */
-        ". . . . . ."           /* 9 */
-        ". . . . . ."           /* 10 */
-        ". . . . . ."           /* 11 */
+        "nv nv nv nv nv nv"       /* 1 */
+        ". . . . . ."             /* 2 */
+        ". tx tx tx tx ."         /* 3 */
+        ". pt pt pt pt ."         /* 4 */
+        ". pt pt pt pt ."         /* 5 */
+        ". pt pt pt pt ."         /* 6 */
+        ". pt pt pt pt ."         /* 7 */
+        ". gw gw gw gw ."         /* 8 */
+        ". gw gw gw gw ."         /* 9 */
+        ". gw gw gw gw ."         /* 10 */
+        ". gw gw gw gw ."         /* 11 */
         ;
     }
     /* Hitta gym - main */

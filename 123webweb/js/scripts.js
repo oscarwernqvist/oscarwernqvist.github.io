@@ -1,5 +1,25 @@
 $(document).ready(() => {
     
+   /* function allamainforutom(main) {
+        var allamain = ['.mgmain', '.g1main', '.mvmain', '.hgmain']
+        var index = allamain.indexOf(main)
+        if (index > -1) {
+            allamain.splice(index, 1);
+        }
+        allamain.toString();
+        return allamain
+    }
+    
+    function allasakerforutom(main) {
+        var allasaker = ['.hittagym', '.gym1', '.minavänner', '.hittagym']
+        var index = allasaker.indexOf(main)
+        if (index > -1) {
+            allasaker.splice(index, 1);
+        }
+        allasaker.toString();
+        return allasaker
+    }
+    */
 
     /* ALLT PÅ DE ANDRA UNDERSIDORNA SKA GÖMMAS HÄR */
     $('.minavanner').hide()
@@ -10,58 +30,42 @@ $(document).ready(() => {
     /* Hitta Hym (hg)  */
     $('#n1').on('click', () => {
         $('#n1').attr('class', 'active');
-        $('#n2').attr('class', 'inactive');
-        $('#n3').attr('class', 'inactive');
-        $('.hittagym').show()
-        $('.minavanner').hide()
-        $('.minagym').hide()
-        $('.mgmain').attr('class', 'hgmain');
-        $('.mvmain').attr('class', 'hgmain');
-        $('.g1main').attr('class', 'hgmain');
-        $('.gym1').hide();
+        $('#n2, #n3').attr('class', 'inactive');
+        $('.hittagym').show();
+      /*  $(allasakerforutom('.hittagym').hide(); */ 
+        $('.minagym, .gym1, .minavanner').hide();
+      /*  $(allamainforutom('.hgmain')).attr('class', 'hgmain'); */
+        $('.mgmain, .g1main, .mvmain').attr('class', 'hgmain');
     });
 
     /* Mina Gym (mg) */
 
     $('#n2').on('click', () => {
         $('#n2').attr('class', 'active');
-        $('#n1').attr('class', 'inactive');
-        $('#n3').attr('class', 'inactive');
+        $('#n1, #n3').attr('class', 'inactive');
         $('.minagym').show();
-        $('.minavanner').hide()
-        $('.hittagym').hide()
-        $('.hgmain').attr('class', 'mgmain');
-        $('.mvmain').attr('class', 'mgmain');
-        $('.g1main').attr('class', 'mgmain');
-        $('.gym1').hide();
+        $('.minavanner, .gym1, .hittagym').hide()
+        $('.hgmain, .mvmain, .g1main').attr('class', 'mgmain');
     });
 
     /* Mina Vänner (mv) */
 
     $('#n3').on('click', () => {
         $('#n3').attr('class', 'active');
-        $('#n2').attr('class', 'inactive');
-        $('#n1').attr('class', 'inactive');
-        $('.minagym').hide();
-        $('.minavanner').show()
-        $('.mgmain').attr('class', 'mvmain');
-        $('.hgmain').attr('class', 'mvmain');
-        $('.g1main').attr('class', 'mvmain');
-        $('.hittagym').hide()
-        $('.gym1').hide();
+        $('#n1, #n2').attr('class', 'inactive');
+        $('.minavanner').show();
+        $('.minagym, .gym1, .hittagym').hide();
+        $('.hgmain, .mgmain, .g1main').attr('class', 'mvmain');
+       
     });
 
 
     /* Gym 1 */
 
     $('#merinfogym1, #a1d1').on('click' , () => {
-        $('.minagym').hide();
-        $('.minavänner').hide();   
-        $('.hittagym').hide();
+        $('.minagym, .minavänner, .hittagym').hide();
         $('.gym1').show();
-        $('.mgmain').attr('class', 'g1main');
-        $('.hgmain').attr('class', 'g1main');
-        $('.mvmain').attr('class', 'g1main');
+        $('.mgmain, .hgmain, .mvmain').attr('class', 'g1main');
     });
 
 
