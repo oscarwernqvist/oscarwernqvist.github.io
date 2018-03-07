@@ -79,7 +79,12 @@ $(document).ready(() => {
 
     });
 
+    /* Gömma desktopsaker */
 
+    if ($(window).width() >= 600) {
+        $('.desktop').hide();
+
+    }
 
 
 

@@ -14,9 +14,35 @@ Vinröd: #663333;
     margin: 0px;
 }
 
+.mgmain {
+    margin: 0 auto;
+    background-color: #CCCCCC;
+    display: grid;
+    width: 1200px;
+    Height: 850px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr repeat(8, 1fr);
+    grid-template-areas: 
+    ". . nv nv nv nv nv nv"     /* 1 */
+    ". . . . . . . ."           /* 2 */
+    ". . . a1 a1 a1 a1 ."       /* 3 */
+    ". . . a1 a1 a1 a1 ."       /* 4 */
+    ". . . a1 a1 a1 a1 ."       /* 5 */
+    ". . . a2 a2 a2 a2."       /* 6 */
+    ". . . a2 a2 a2 a2 ."       /* 7 */
+    ". . . a2 a2 a2 a2 ."       /* 8 */
+    ". . . . . . . ."       /* 9 */
+    ;
+
+}
+
+
 .nv {
     display: grid;
     grid-area: nv;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "n1 n2 n3";
 }
 
 #n1 {
@@ -409,12 +435,7 @@ h1 {
             ;
     
     }
-
-    .nv {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: "n1 n2 n3";
-    }
+    
     body {
         background-color: #CCCCCC;
     }
