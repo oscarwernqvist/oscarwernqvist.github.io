@@ -1,5 +1,7 @@
 $(document).ready(() => {
     
+    
+    /* Förstasidan */
     var latestMain = '.mgmain'
     var latestSaker = '.minagym'
 
