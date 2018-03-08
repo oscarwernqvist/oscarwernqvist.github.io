@@ -6,12 +6,13 @@ Blekgrön: #99cc99;
 Vinröd: #663333;
 */
 
-
+body {
+    background-color: #999999
+}
 
 .main {
     background-color: #CCCCCC;
-    width: 1200px;
-    margin: 0px;
+    display: grid;
 }
 
 .mgmain {
@@ -23,17 +24,59 @@ Vinröd: #663333;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr repeat(8, 1fr);
     grid-template-areas: 
-    ". . nv nv nv nv nv nv"     /* 1 */
-    ". . . . . . . ."           /* 2 */
-    ". . . a1 a1 a1 a1 ."       /* 3 */
-    ". . . a1 a1 a1 a1 ."       /* 4 */
-    ". . . a1 a1 a1 a1 ."       /* 5 */
-    ". . . a2 a2 a2 a2."       /* 6 */
-    ". . . a2 a2 a2 a2 ."       /* 7 */
-    ". . . a2 a2 a2 a2 ."       /* 8 */
-    ". . . . . . . ."       /* 9 */
+    "lg lg . nv nv nv nv ."       /* 1 */
+    "as as . . . . . ."           /* 2 */
+    "as as . a1 a1 a1 a1 ."       /* 3 */
+    "as as . a1 a1 a1 a1 ."       /* 4 */
+    "as as . a1 a1 a1 a1 ."       /* 5 */
+    "as as . a2 a2 a2 a2 ."       /* 6 */
+    "as as . a2 a2 a2 a2 ."       /* 7 */
+    "as as . a2 a2 a2 a2 ."       /* 8 */
+    "as as . . . . . ."           /* 9 */
     ;
 
+}
+
+.hgmain {
+    margin: 0 auto;
+    background-color: #CCCCCC;
+    display: grid;
+    width: 1200px;
+    Height: 850px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr repeat(8, 1fr);
+    grid-template-areas: 
+    "lg lg . nv nv nv nv ."       /* 1 */
+    "as as . . . . . ."           /* 2 */
+    "as as . fl fl fl fl ."       /* 3 */
+    "as as . . . . . ."           /* 4 */
+    "as as . g1 g1 g1 g1 ."       /* 5 */
+    "as as . g1 g1 g1 g1 ."       /* 6 */
+    "as as . g2 g2 g2 g2 ."       /* 7 */
+    "as as . g2 g2 g2 g2 ."       /* 8 */
+    "as as . . . . . ."           /* 9 */
+    ;
+}
+
+.mvmain {
+    margin: 0 auto;
+    background-color: #CCCCCC;
+    display: grid;
+    width: 1200px;
+    Height: 850px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr repeat(8, 1fr);
+    grid-template-areas: 
+    "lg lg . nv nv nv nv ."     /* 1 */
+    "as as . . . . . ."           /* 2 */
+    "as as . tx tx tx tx ."       /* 3 */
+    "as as . . . . . ."       /* 4 */
+    "as as . pt pt pt pt ."       /* 5 */
+    "as as . pt pt pt pt ."       /* 6 */
+    "as as . gw gw gw gw ."       /* 7 */
+    "as as . gw gw gw gw ."       /* 8 */
+    "as as . . . . . ."       /* 9 */
+    ;
 }
 
 
@@ -156,7 +199,6 @@ h4:hover {
 h3 {
     font-family: 'Comfortaa', cursive;
     font-size: 0.875em;
-    color: #663333;
 }
 
 .active {
@@ -180,6 +222,8 @@ h3 {
     width: 100%;
     height: 60%;
     font-family: 'Comfortaa', cursive;
+    padding-left: 3%;
+    max-height: 30px;
 }
 
 .form {
@@ -328,7 +372,7 @@ h3 {
 
 .gymbild{
     max-width:100%;
-    max-height: 75%;
+    max-height: 70%;
     border: 2px;
     border-radius: 20px;
     border-style: solid;
@@ -337,15 +381,79 @@ h3 {
 
 h1 {
     font-family: 'Comfortaa', cursive;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #663333;
+}
+
+#aside {
+    border: 2px;
+    border-style: solid;
+    border-color: #666666;
+    grid-area: as;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr 0.5fr 0.5fr repeat(6, 1fr);
+    grid-template-areas: 
+    "at"    /*1*/
+    "rg"    /*2*/    
+    "li"    /*3*/
+    "."     /*4*/
+    "."     /*5*/
+    "."     /*6*/
+    "."     /*7*/
+    "."     /*8*/
+    "."     /*9*/
+   ;
+}
+
+#asidetitel {
+    grid-area: at;
+}
+
+#logga {
+    grid-area: lg;
+    display: Grid;
+    padding-left: 5%;
+}
+
+#loggain {
+    height: 40px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: #99cc99;
+    color: #666666;
+    text-align: center;
+    grid-area: li;
+    margin: 0 auto;
+}
+
+#registrera {
+    height: 40px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: #99cc99;
+    color: #CCCCCC;
+    text-align: center;
+    background-color: #663333;
+    grid-area: rg;
+    margin: 0 auto;
+}
+
+.red {
+    color:#663333;
+}
+
+.lightgray {
+    color: #CCCCCC;
+}
+
+.darkgray {
+    color: #666666;
 }
 
 @media all and (max-width: 800px) {
     .main {
         display: grid;
-        width: 100%;
-        Height: 600px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(11, 1fr);
     }
@@ -353,7 +461,6 @@ h1 {
 
     /* Mina Gym - main */    
     .mgmain {
-        display: grid;
         width: 100%;
         Height: 600px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -375,7 +482,6 @@ h1 {
     }
     /* Mina vänner - main */ 
     .mvmain {
-        display: grid;
         width: 100%;
         Height: 600px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -396,7 +502,6 @@ h1 {
     }
     /* Hitta gym - main */
     .hgmain{
-        display: grid;
         width: 100%;
         Height: 600px;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -439,4 +544,13 @@ h1 {
     body {
         background-color: #CCCCCC;
     }
+
+    #aside {
+        display: none;
+    }
+
+    #logga {
+        display: none;
+    }
+
 }

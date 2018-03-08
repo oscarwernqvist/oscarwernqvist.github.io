@@ -1,27 +1,9 @@
 $(document).ready(() => {
     
-   /* function allamainforutom(main) {
-        var allamain = ['.mgmain', '.g1main', '.mvmain', '.hgmain']
-        var index = allamain.indexOf(main)
-        if (index > -1) {
-            allamain.splice(index, 1);
-        }
-        allamain.toString();
-        return allamain
-    }
-    
-    function allasakerforutom(main) {
-        var allasaker = ['.hittagym', '.gym1', '.minavänner', '.hittagym']
-        var index = allasaker.indexOf(main)
-        if (index > -1) {
-            allasaker.splice(index, 1);
-        }
-        allasaker.toString();
-        return allasaker
-    }
-    */
+    var latestMain = '.mgmain'
+    var latestSaker = '.minagym'
 
-    /* ALLT PÅ DE ANDRA UNDERSIDORNA SKA GÖMMAS HÄR */
+    /* ALLT PÅ DE ANDRA UNDERSIDORNA SKA GÖMMAS HÄR FÖRST*/
     $('.minavanner').hide()
     $('.hittagym').hide()
     $('.gym1').hide()
@@ -31,11 +13,12 @@ $(document).ready(() => {
     $('#n1').on('click', () => {
         $('#n1').attr('class', 'active');
         $('#n2, #n3').attr('class', 'inactive');
-        $('.hittagym').show();
-      /*  $(allasakerforutom('.hittagym').hide(); */ 
-        $('.minagym, .gym1, .minavanner').hide();
-      /*  $(allamainforutom('.hgmain')).attr('class', 'hgmain'); */
-        $('.mgmain, .g1main, .mvmain').attr('class', 'hgmain');
+        
+        $(latestSaker).hide();
+        $('.hittagym').show();  
+        $(latestMain).attr('class', 'hgmain');
+        latestSaker = '.hittagym'
+        latestMain = '.hgmain' 
     });
 
     /* Mina Gym (mg) */
@@ -43,9 +26,12 @@ $(document).ready(() => {
     $('#n2').on('click', () => {
         $('#n2').attr('class', 'active');
         $('#n1, #n3').attr('class', 'inactive');
+        
+        $(latestSaker).hide()
         $('.minagym').show();
-        $('.minavanner, .gym1, .hittagym').hide()
-        $('.hgmain, .mvmain, .g1main').attr('class', 'mgmain');
+        $(latestMain).attr('class', 'mgmain');
+        latestSaker = '.minagym'
+        latestMain = '.mgmain' 
     });
 
     /* Mina Vänner (mv) */
@@ -53,19 +39,22 @@ $(document).ready(() => {
     $('#n3').on('click', () => {
         $('#n3').attr('class', 'active');
         $('#n1, #n2').attr('class', 'inactive');
+        $(latestSaker).hide();
         $('.minavanner').show();
-        $('.minagym, .gym1, .hittagym').hide();
-        $('.hgmain, .mgmain, .g1main').attr('class', 'mvmain');
-       
+        $(latestMain).attr('class', 'mvmain');
+        latestSaker = '.minavanner'
+        latestMain = '.mvmain' 
     });
 
 
     /* Gym 1 */
 
     $('#merinfogym1, #a1d1').on('click' , () => {
-        $('.minagym, .minavänner, .hittagym').hide();
+        $(latestSaker).hide();
         $('.gym1').show();
-        $('.mgmain, .hgmain, .mvmain').attr('class', 'g1main');
+        $(latestMain).attr('class', 'g1main');
+        latestSaker = '.gym1'
+        latestMain = '.g1main' 
     });
 
 
@@ -81,11 +70,11 @@ $(document).ready(() => {
 
     /* Gömma desktopsaker */
 
-    if ($(window).width() >= 600) {
+   /* if ($(window).width() >= 600) {
         $('.desktop').hide();
 
     }
-
+*/
 
 
 });
