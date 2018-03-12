@@ -6,9 +6,7 @@ $(document).ready(() => {
     var latestSaker = '.minagym'
 
     /* ALLT PÅ DE ANDRA UNDERSIDORNA SKA GÖMMAS HÄR FÖRST*/
-    $('.minavanner').hide()
-    $('.hittagym').hide()
-    $('.gym1').hide()
+    $('.minavanner, .hittagym, .gym1, .gym2').hide()
 
 
     /* Hitta Hym (hg)  */
@@ -59,7 +57,15 @@ $(document).ready(() => {
         latestMain = '.g1main' 
     });
 
+    /* Gym 2 */
 
+    $('#merinfogym2, #a2d1').on('click' , () => {
+        $(latestSaker).hide();
+        $('.gym2').show();
+        $(latestMain).attr('class', 'g2main');
+        latestSaker = '.gym2'
+        latestMain = '.g2main' 
+    });
 
     /* Options2 slide down meny   */
 

@@ -1,5 +1,5 @@
 /* Färger: 
-Ljusgrå: #CCCCCC;
+Ljusgrå: #DDDDDD;
 Mellangrå: #999999;
 Mörkgrå: #666666;
 Blekgrön: #99cc99;
@@ -11,13 +11,13 @@ body {
 }
 
 .main {
-    background-color: #CCCCCC;
+    background-color: #DDDDDD;
     display: grid;
 }
 
 .mgmain {
     margin: 0 auto;
-    background-color: #CCCCCC;
+    background-color: #DDDDDD;
     display: grid;
     width: 1200px;
     Height: 850px;
@@ -39,7 +39,7 @@ body {
 
 .hgmain {
     margin: 0 auto;
-    background-color: #CCCCCC;
+    background-color: #DDDDDD;
     display: grid;
     width: 1200px;
     Height: 850px;
@@ -60,11 +60,11 @@ body {
 
 .mvmain {
     margin: 0 auto;
-    background-color: #CCCCCC;
+    background-color: #DDDDDD;
     display: grid;
     width: 1200px;
     Height: 850px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 0.5fr repeat(8, 1fr);
     grid-template-areas: 
     "lg lg . nv nv nv nv ."     /* 1 */
@@ -79,6 +79,47 @@ body {
     ;
 }
 
+.g1main {
+    margin: 0 auto;
+    background-color: #DDDDDD;
+    display: grid;
+    width: 1200px;
+    Height: 800px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 0.5fr repeat(8, 1fr);
+    grid-template-areas: 
+    "lg lg . nv nv nv nv ."     /* 1 */
+    "as as . . . . . ."         /* 2 */
+    "as as . og1 og1 og1 og1 ." /* 3 */
+    "as as . og1 og1 og1 og1 ." /* 4 */
+    "as as . og1 og1 og1 og1 ." /* 5 */
+    "as as . . kg1 kg1 . ."     /* 6 */
+    "as as . . . . . ."         /* 7 */
+    "as as . . . . . ."         /* 8 */
+    "as as . . . . . ."         /* 9 */
+    ;
+}
+
+.g2main {  
+    margin: 0 auto;
+    background-color: #DDDDDD;
+    display: grid;
+    width: 1200px;
+    Height: 800px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 0.5fr repeat(8, 1fr);
+    grid-template-areas: 
+    "lg lg . nv nv nv nv ."     /* 1 */
+    "as as . . . . . ."         /* 2 */
+    "as as . og2 og2 og2 og2 ." /* 3 */
+    "as as . og2 og2 og2 og2 ." /* 4 */
+    "as as . og2 og2 og2 og2 ." /* 5 */
+    "as as . . kg2 kg2 . ."     /* 6 */
+    "as as . . . . . ."         /* 7 */
+    "as as . . . . . ."         /* 8 */
+    "as as . . . . . ."         /* 9 */
+    ;
+}
 
 .nv {
     display: grid;
@@ -104,22 +145,23 @@ body {
 }
 
 article {
-    background-color: #CCCCCC;
+    background-color: #DDDDDD;
     border: 2px;
     border-radius: 20px;
     border-style: solid;
     border-color: #999999;
     margin-top: 20px;
-    padding: 10px;
     position: relative;
 }
 
 #a1 {
     grid-area: a1;
+    padding: 5%;
 }
 
 #a2 {
     grid-area: a2;
+    padding: 5%;
 }
 
 #a1d1 {
@@ -198,6 +240,7 @@ h4 {
 h5 {
     font-family: 'Comfortaa', cursive;
     font-size: 0.875em;
+    margin-top: 5px;
 }
 
 h4:hover {
@@ -210,7 +253,7 @@ h3 {
 }
 
 .active {
-    background-color: #CCCCCC;
+    background-color: #DDDDDD;
     border-top: 2px;
     border-bottom: 0px;
     border-left: 2px;
@@ -253,7 +296,7 @@ h3 {
 }
 
 .inactive:hover {
-    background-color: #CCCCCC;
+    background-color: #DDDDDD;
     color: #663333;
     text-decoration: underline;
 }
@@ -275,7 +318,7 @@ h3 {
 }
 
 .sokresult {
-    background-color: #CCCCCC;
+    background-color: #DDDDDD;
     border: 2px;
     border-radius: 20px;
     border-style: solid;
@@ -374,8 +417,16 @@ h3 {
     grid-area: og1;
 }
 
+#omgym2 {
+    grid-area: og2;
+}
+
 #kontaktgym1 {
     grid-area: kg1;
+}
+
+#kontaktgym2 {
+    grid-area: kg2;
 }
 
 .gymbild{
@@ -446,7 +497,7 @@ h1 {
     width: 60%;
     border-radius: 10px;
     background-color: #99cc99;
-    color: #CCCCCC;
+    color: #DDDDDD;
     text-align: center;
     background-color: #663333;
     grid-area: rg;
@@ -462,40 +513,39 @@ h1 {
 }
 
 .lightgray {
-    color: #CCCCCC;
+    color: #DDDDDD;
 }
 
 .darkgray {
     color: #666666;
 }
 
-#minavannertopnavosv {
-    padding-top: 5%;
-    display: grid;
+.minavannertopnavosv {
+    display: flex;
     grid-area: tn;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: 
-    "k1 k2 ."
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+
 }
 
 .knapp {
     height: 30px;
     width: 80px;
-    margin: 0 auto;
+    margin: 0px;
     border-radius: 10px;
     background-color: #666666;
     text-align: center;
+    margin-bottom: 35px;
+    margin-right: 13%;
 }
 
 #knapp1 {
-   grid-area: k1;
-   color: #CCCCCC;
+   color: #DDDDDD;
 }
 
 #knapp2 {
-    grid-area: k2;
-    color: #CCCCCC;
+    color: #DDDDDD;
 }
 
 #mvsok {
@@ -577,9 +627,7 @@ h1 {
         ;
     }
 
-  
-
-    /* Gym 1 */
+    /* Gym 1 - main*/
 
     .g1main {
             display: grid;
@@ -588,18 +636,37 @@ h1 {
             grid-template-columns: 1fr 4fr 1fr;
             grid-template-rows: 1fr repeat(5, 2fr);
             grid-template-areas: 
-            "nv nv nv"        /* 1 */
-            "og1 og1 og1"         /* 2 */
-            "og1 og1 og1"         /* 3 */
-            "og1 og1 og1"         /* 4 */
+            "nv nv nv"          /* 1 */
+            "og1 og1 og1"       /* 2 */
+            "og1 og1 og1"       /* 3 */
+            "og1 og1 og1"       /* 4 */
             ". kg1 ."           /* 5 */
-            ". . ." 
+            ". . ."             /* 6 */
             ;
     
     }
+
+    /* Gym 2 - main */
+
+    .g2main {
+        display: grid;
+        width: 100%;
+        Height: 600px;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 1fr repeat(5, 2fr);
+        grid-template-areas: 
+        "nv nv nv"          /* 1 */
+        "og2 og2 og2"       /* 2 */
+        "og2 og2 og2"       /* 3 */
+        "og2 og2 og2"       /* 4 */
+        ". kg2 ."           /* 5 */
+        ". . ."             /* 6 */
+        ;
+
+}
     
     body {
-        background-color: #CCCCCC;
+        background-color: #DDDDDD;
     }
 
     #aside {
