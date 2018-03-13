@@ -67,15 +67,15 @@ body {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 0.5fr repeat(8, 1fr);
     grid-template-areas: 
-    "lg lg . nv nv nv nv ."     /* 1 */
-    "as as . tn tn tx tx ."     /* 2 */
-    "as as . pt pt pt pt ."     /* 3 */
-    "as as . pt pt pt pt ."     /* 4 */
-    "as as . gw gw gw gw ."     /* 5 */
-    "as as . gw gw gw gw ."     /* 6 */
-    "as as . bt bt bt bt ."     /* 7 */
-    "as as . bt bt bt bt ."     /* 8 */
-    "as as . . . . . ."         /* 9 */
+    "lg lg . nv nv nv nv ."             /* 1 */
+    "as as . tn tn tx tx ."             /* 2 */
+    "as as . mvul mvul mvul mvul ."     /* 3 */
+    "as as . mvul mvul mvul mvul ."     /* 4 */
+    "as as . mvul mvul mvul mvul ."     /* 5 */
+    "as as . mvul mvul mvul mvul ."     /* 6 */
+    "as as . mvul mvul mvul mvul ."     /* 7 */
+    "as as . mvul mvul mvul mvul ."     /* 8 */
+    "as as . . . . . ."                 /* 9 */
     ;
 }
 
@@ -84,7 +84,7 @@ body {
     background-color: #DDDDDD;
     display: grid;
     width: 1200px;
-    Height: 800px;
+    Height: 850px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 0.5fr repeat(8, 1fr);
     grid-template-areas: 
@@ -177,29 +177,16 @@ article {
 }
 
 #pertan {
-    grid-area: pt;
-    padding: 4%;
+    background-color: #DDDDDD;
     
 }
 
 #gw{
-    grid-area: gw;
-    padding: 4%;
+    background-color: #DDDDDD;
 }
 
 #berra{
-    grid-area: bt;
-    padding: 4%;
-}
-
-.profileimg {
-    max-width:100%;
-    max-height: 80%;
-    width: 100px;
-    border: 2px;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: #999999;
+    background-color: #DDDDDD;
 }
 
 .merinfo {
@@ -265,6 +252,8 @@ h3 {
     color: #663333;
 }
 
+/* Sökfunktion - Lista - Mina Vänner */
+
 .textinput{
     border: 2px;
     border-radius: 20px;
@@ -276,6 +265,47 @@ h3 {
     padding-left: 3%;
     height: 25px;
 }
+
+#mvul {
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    grid-area: mvul;
+}
+
+#mvul li{
+    height: 150px;
+    background-color: #DDDDDD;
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #999999;
+    margin-top: 10px;
+    background-color: #DDDDDD;
+    text-decoration: none;
+    display: block;
+    padding-left: 5%;
+}
+
+#mvul li:hover {
+    background-color: #999999;
+}
+
+
+.profileimg {
+    max-width:100%;
+    max-height: 80%;
+    width: 100px;
+    border: 2px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #999999;
+    position: relative;
+}
+
+
+/* Slut */
 
 .form {
     grid-area: tx;
@@ -370,8 +400,8 @@ h3 {
 }
 
 .gymbild {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 80%;
+    height: 60%;
 }
 
 #options1 {
@@ -415,10 +445,12 @@ h3 {
 
 #omgym1 {
     grid-area: og1;
+    padding-left: 5%;
 }
 
 #omgym2 {
     grid-area: og2;
+    padding-left: 5%;
 }
 
 #kontaktgym1 {
@@ -589,21 +621,21 @@ h1 {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(15, 1fr);
         grid-template-areas: 
-        "nv nv nv nv nv nv"       /* 1 */
-        ". . . . . ."             /* 2 */
-        ". tx tx tx tx ."         /* 3 */
-        ". pt pt pt pt ."         /* 4 */
-        ". pt pt pt pt ."         /* 5 */
-        ". pt pt pt pt ."         /* 6 */
-        ". pt pt pt pt ."         /* 7 */
-        ". gw gw gw gw ."         /* 8 */
-        ". gw gw gw gw ."         /* 9 */
-        ". gw gw gw gw ."         /* 10 */
-        ". gw gw gw gw ."         /* 11 */
-        ". bt bt bt bt ."         /* 12 */
-        ". bt bt bt bt ."         /* 13 */
-        ". bt bt bt bt ."         /* 14 */
-        ". bt bt bt bt ."         /* 15 */
+        "nv nv nv nv nv nv"               /* 1 */
+        ". . . . . ."                     /* 2 */
+        ". mvul mvul mvul mvul ."         /* 3 */
+        ". mvul mvul mvul mvul ."         /* 4 */
+        ". mvul mvul mvul mvul ."         /* 5 */
+        ". mvul mvul mvul mvul ."         /* 6 */
+        ". mvul mvul mvul mvul ."         /* 7 */
+        ". mvul mvul mvul mvul ."         /* 8 */
+        ". mvul mvul mvul mvul ."         /* 9 */
+        ". mvul mvul mvul mvul ."         /* 10 */
+        ". mvul mvul mvul mvul ."         /* 11 */
+        ". mvul mvul mvul mvul ."         /* 12 */
+        ". mvul mvul mvul mvul ."         /* 13 */
+        ". mvul mvul mvul mvul ."         /* 14 */
+        ". mvul mvul mvul mvul ."         /* 15 */
         ;
     }
     /* Hitta gym - main */

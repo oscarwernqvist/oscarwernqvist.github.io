@@ -80,25 +80,25 @@
         </article>
 
         <!-- Mina Vänner -->
-
-        <article class="minavanner" id="pertan">
+        <ul id="mvul">
+        <li class="minavanner mvlist" id="pertan">
             <h3 class="red">Per Morberg</h3>
             <img src="../img/pertan.jpg" alt="Pertan" class="profileimg">
-        </article>
+        </li>
 
-        <article class="minavanner" id="gw">
+        <li class="minavanner mvlist" id="gw">
             <h3 class="red">Leffe</h3>
             <img src="img/LeifGWPersson.jpg" alt="Leffe" class="profileimg">
-        </article>
+        </li>
 
-        <article class="minavanner" id="berra">
+        <li class="minavanner mvlist" id="berra">
             <h3 class="red">Berra</h3>
             <img src="img/berra.jpg" alt="Berra" class="profileimg">
-        </article>
-
-        <form class="minavanner form" id="mvsok">
-            <input type="text" class="textinput" name="sokvanner" placeholder="Sök vänner">
-        </form>
+        </li>
+        </ul>
+        <div class="minavanner form" id="mvsok">
+            <input type="text" id="MVsearchBar" class="textinput" name="sokvanner" onkeyup="MVsearchFunction()" placeholder="Sök vänner">
+        </div>
 
         <!-- Mina Vänner Desktop knappar -->
 
@@ -158,8 +158,7 @@
             </article>
             <section class="gym1 kontakt"  id="kontaktgym1">
                 <h3 class="darkgray">Adress 12345</h4>
-            </section>
-        
+                </section>
 
 
         <!-- Gym 2 -->
