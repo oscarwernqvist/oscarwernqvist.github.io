@@ -622,7 +622,7 @@ h1 {
         grid-template-rows: repeat(15, 1fr);
         grid-template-areas: 
         "nv nv nv nv nv nv"               /* 1 */
-        ". . . . . ."                     /* 2 */
+        ". tx tx tx tx ."                     /* 2 */
         ". mvul mvul mvul mvul ."         /* 3 */
         ". mvul mvul mvul mvul ."         /* 4 */
         ". mvul mvul mvul mvul ."         /* 5 */
