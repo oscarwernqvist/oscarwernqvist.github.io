@@ -84,6 +84,7 @@ $(document).ready(() => {
     }
 */
 
+initMap()
 
 });
 
@@ -102,4 +103,30 @@ function MVsearchFunction() {
             li[i].style.display = "none";
         }
     }
+}
+
+
+
+function initMap() {
+    var uluru = {lat: 57.7, lng: 11.9};
+	
+    var map = new google.maps.Map(document.getElementById('kontaktgym1'), {
+      zoom: 10,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+      title: 'Gym 1'
+    });
+
+    var map = new google.maps.Map(document.getElementById('kontaktgym2'), {
+        zoom: 10,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'Gym 1'
+      });
 }
