@@ -540,6 +540,15 @@ h1 {
     text-decoration: underline;
 }
 
+#asideknapp {
+    width: 100%;
+    border-style: solid;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-color: #999999;
+    text-align: center;
+}
+
 .red {
     color:#663333;
 }
