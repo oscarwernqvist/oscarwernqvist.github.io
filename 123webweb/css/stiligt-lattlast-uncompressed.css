@@ -539,7 +539,7 @@ h1 {
 #registrera:hover {
     text-decoration: underline;
 }
-
+/*
 #asideknapp {
     width: 100%;
     border-style: solid;
@@ -547,8 +547,9 @@ h1 {
     border-bottom: 2px;
     border-color: #999999;
     text-align: center;
+    grid-area: ak;
 }
-
+*/
 .red {
     color:#663333;
 }
