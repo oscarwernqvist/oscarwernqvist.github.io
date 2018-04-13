@@ -15,7 +15,46 @@ p {
 }
 
 img {
-    margin: 0 auto;
+    margin: 2%;
     display: block;
+    max-height: 100%;
+    max-width: 600px;
+}
+
+.rotate {
+    transform: rotate(90deg);
+ 
+}
+
+#bilder {
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    
+}
+
+@media all and (min-width: 800px) {
+    #bilder {
+        height: 40vh;
+    }
+
+}
+
+@media all and (max-width: 800px) {
+
+.rotate {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    max-height: 140%;
+    max-width: 900px;
+
+}
+
+#bilder{
+    flex-direction: column;
+}
 
 }
