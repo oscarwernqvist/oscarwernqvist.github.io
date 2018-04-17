@@ -1,0 +1,61 @@
+#section_one {
+    background: url(../img/747.jpeg);
+    background-position: top;
+    width: 100vw;
+    height: 100vh;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: darkred;
+    
+}
+
+#ommig {
+    grid-area: om;
+ /*   border-left: 3px solid rgba(100, 100, 150, 0.8);
+    border-right: 3px solid rgba(100, 100, 150, 0.8); */
+    text-align: center;
+}
+
+#kontakt {
+    grid-area: kt;
+ /*   border-left: 3px solid rgba(100, 100, 150, 0.8);
+    border-right: 3px solid rgba(100, 100, 150, 0.8); */
+    text-align: center;
+}
+
+.knapp:hover {
+    background-color: rgba(100, 100, 150, 0.8);
+}
+
+nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100px;
+    background-color: rgba(100, 100, 150, 0.5);
+    display: grid;
+    z-index: 10;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    grid-template-areas: ". om kt .";
+
+}
+
+.wip {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkred;
+}
