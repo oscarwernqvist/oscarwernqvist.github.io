@@ -1,5 +1,5 @@
 #section_one {
-    background: url(../img/747.jpeg);
+    background: url(../img/clouds1.jpg);
     background-position: top;
     width: 100vw;
     height: 100vh;
@@ -12,43 +12,72 @@
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
-    color: darkred;
+    color: darkblue;
+    font-weight: 300;
     
 }
 
-#ommig {
-    grid-area: om;
- /*   border-left: 3px solid rgba(100, 100, 150, 0.8);
-    border-right: 3px solid rgba(100, 100, 150, 0.8); */
+ul {
+    list-style-type: none;
+
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 26px;
+    color: darkblue;
+    letter-spacing: 3px;
+}
+
+.knapp, .logo {
     text-align: center;
+    width: 7vw;
+    min-width: 120px;
+    display: block;
+    height: 100%;
 }
 
-#kontakt {
-    grid-area: kt;
- /*   border-left: 3px solid rgba(100, 100, 150, 0.8);
-    border-right: 3px solid rgba(100, 100, 150, 0.8); */
-    text-align: center;
+.logo {
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
-.knapp:hover {
-    background-color: rgba(100, 100, 150, 0.8);
+body{
+    font-family: 'Barlow Condensed', sans-serif;
 }
-
 nav {
+    line-height: 15px;
     position: absolute;
     top: 0px;
     left: 0px;
     width: 100vw;
-    height: 100px;
-    background-color: rgba(100, 100, 150, 0.5);
-    display: grid;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
     z-index: 10;
     grid-template-rows: 1fr;
     grid-template-columns: 2fr 1fr 1fr 2fr;
     grid-template-areas: ". om kt .";
+    border: 0px;
+    border-bottom: 1px;
+    border-color: darkblue;
+    border-style: solid;
+   
+}
 
+.popdown {
+    background-color: white;
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    border: 0px;
+    border-bottom: 1px;
+    border-color: darkblue;
+    border-style: solid;
 }
 
 .wip {
@@ -56,6 +85,5 @@ nav {
     top: 30%;
     left: 30%;
     font-size: 100px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: darkred;
+    color: darkblue;
 }
