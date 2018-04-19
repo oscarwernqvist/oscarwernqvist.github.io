@@ -1,7 +1,7 @@
 #section_one {
     background: url(../img/clouds1.jpg);
     background-position: top;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-size: 100vw;
     background-repeat: no-repeat;
@@ -11,9 +11,24 @@
     top: 0px;
 }
 
+#section_two {
+    background: url(../img/mountain1.jpg);
+    background-position: top;
+    width: 100%;
+    height: 100vh;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: absolute;
+    position: absolute;
+    margin: 0px;
+    left: 0px;
+    top: 100vh;
+}
+
+
 p {
     font-size: 24px;
-    color: darkblue;
+    color: #333399;
     font-weight: 300;
     
 }
@@ -26,7 +41,7 @@ ul {
 h1 {
     font-weight: 800;
     font-size: 26px;
-    color: darkblue;
+    color: #333399;
     letter-spacing: 3px;
 }
 
@@ -45,24 +60,24 @@ h1 {
 
 body{
     font-family: 'Barlow Condensed', sans-serif;
+    width: 100vw;
+
 }
 nav {
     line-height: 15px;
-    position: absolute;
+    position: fixed;
     top: 0px;
     left: 0px;
-    width: 100vw;
+    width: 100%;
+    max-width: 100%;
     height: 60px;
     background-color: white;
     display: flex;
     flex-direction: row;
     z-index: 10;
-    grid-template-rows: 1fr;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-areas: ". om kt .";
     border: 0px;
     border-bottom: 1px;
-    border-color: darkblue;
+    border-color: #333399;
     border-style: solid;
    
 }
@@ -76,14 +91,46 @@ nav {
     left: 0px;
     border: 0px;
     border-bottom: 1px;
-    border-color: darkblue;
+    border-color: #333399;
     border-style: solid;
 }
 
 .wip {
-    position: fixed;
+    position: absolute;
+    font-size: 100px;
+    color: #333399;
+}
+
+h2 {
+    text-decoration: none;
+}
+
+a:visited {
+   color: #333399; 
+}
+
+h2 > a:before {
+    content: "";
+    background-color: #333399;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+h2 > a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+#wip1 {
     top: 30%;
     left: 30%;
-    font-size: 100px;
-    color: darkblue;
+}
+
+#wip2 {
+    top: 10%;
+    left: 20%;
 }
