@@ -25,17 +25,34 @@
     top: 100vh;
 }
 
+#ft {
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    position: absolute;
+    margin: 0px;
+    left: 0px;
+    top: 200vh;
+    text-align: center;
+}
+
+#ft1 {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: lightgray;
+}
 
 p {
     font-size: 24px;
     color: #333399;
     font-weight: 300;
-    
 }
 
 ul {
     list-style-type: none;
-
 }
 
 h1 {
@@ -58,11 +75,11 @@ h1 {
     padding-right: 2vw;
 }
 
-body{
+body {
     font-family: 'Barlow Condensed', sans-serif;
     width: 100vw;
-
 }
+
 nav {
     line-height: 15px;
     position: fixed;
@@ -79,7 +96,6 @@ nav {
     border-bottom: 1px;
     border-color: #333399;
     border-style: solid;
-   
 }
 
 .popdown {
@@ -106,10 +122,10 @@ h2 {
 }
 
 a:visited {
-   color: #333399; 
+    color: #333399;
 }
 
-h2 > a:before {
+h2>a:before {
     content: "";
     background-color: #333399;
     visibility: hidden;
@@ -117,9 +133,9 @@ h2 > a:before {
     transform: scaleX(0);
     -webkit-transition: all 0.3s ease-in-out 0s;
     transition: all 0.3s ease-in-out 0s;
-  }
+}
 
-h2 > a:hover:before {
+h2>a:hover:before {
     visibility: visible;
     -webkit-transform: scaleX(1);
     transform: scaleX(1);
@@ -133,4 +149,203 @@ h2 > a:hover:before {
 #wip2 {
     top: 10%;
     left: 20%;
+}
+
+#hamburger, #cart {
+    height: 100%;
+    width: 60px;
+    font-size: 42px;
+    padding: 6px;
+    color: #333399;
+}
+
+.material-icons.md-48.blue {
+    font-size: 48px;
+    color: #333399;
+}
+
+/* Snodd kod nedan */
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+.hamburger {
+    padding: 15px 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition-property: opacity, filter;
+    transition-duration: 0.15s;
+    transition-timing-function: linear;
+    font: inherit;
+    color: inherit;
+    text-transform: none;
+    background-color: transparent;
+    border: 0;
+    margin: 0;
+    overflow: visible;
+    outline: 0;
+}
+
+.hamburger:hover {
+    opacity: 0.7;
+}
+
+.hamburger-box {
+    width: 40px;
+    height: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.hamburger-inner {
+    display: block;
+    top: 50%;
+    margin-top: -2px;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #333399;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}
+
+.hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block;
+}
+
+.hamburger-inner::before {
+    top: -10px;
+}
+
+.hamburger-inner::after {
+    bottom: -10px;
+}
+
+/*
+     * Collapse
+     */
+
+.hamburger--collapse .hamburger-inner {
+    top: auto;
+    bottom: 0;
+    transition-duration: 0.13s;
+    transition-delay: 0.13s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse .hamburger-inner::after {
+    top: -20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+}
+
+.hamburger--collapse .hamburger-inner::before {
+    transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse.is-active .hamburger-inner {
+    transform: translate3d(0, -10px, 0) rotate(-45deg);
+    transition-delay: 0.22s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--collapse.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+}
+
+.hamburger--collapse.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(-90deg);
+    transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/*
+     * Collapse Reverse
+     */
+
+.hamburger--collapse-r .hamburger-inner {
+    top: auto;
+    bottom: 0;
+    transition-duration: 0.13s;
+    transition-delay: 0.13s;
+    transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse-r .hamburger-inner::after {
+    top: -20px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+}
+
+.hamburger--collapse-r .hamburger-inner::before {
+    transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse-r.is-active .hamburger-inner {
+    transform: translate3d(0, -10px, 0) rotate(45deg);
+    transition-delay: 0.22s;
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--collapse-r.is-active .hamburger-inner::after {
+    top: 0;
+    opacity: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+}
+
+.hamburger--collapse-r.is-active .hamburger-inner::before {
+    top: 0;
+    transform: rotate(90deg);
+    transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+/* Snodd kod klar*/
+
+@media all and (min-width: 800px) {
+    #burgarmeny {
+        display: none;
+    }
+    .hamburger {
+        display: none;
+    }
+    #cart {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+    #section1 {}
+    #section2 {}
+}
+
+@media all and (max-width: 800px) {
+    .knapp {
+        display: none;
+    }
+    nav {
+        justify-content: space-between;
+    }
+    #aside {
+        height: 100vh;
+        width: 500px;
+        max-width: 80vw;
+        background-color: white;
+        position: fixed;
+        top: 60px;
+        left: 0px;
+        border: 0px;
+        border-right: 1px;
+        border-color: #333399;
+        border-style: solid;
+    }
 }
