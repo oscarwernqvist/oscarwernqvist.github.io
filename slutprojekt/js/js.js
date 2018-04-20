@@ -14,7 +14,7 @@ $(document).ready(() => {
 
     $('.hamburger').on('click', () => {
 
-        $('#aside').slideToggle(150);
+        $('#aside').slideToggle(300);
         $('.hamburger').toggleClass("is-active");
 
     });

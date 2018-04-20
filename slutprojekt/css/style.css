@@ -125,21 +125,6 @@ a:visited {
     color: #333399;
 }
 
-h2>a:before {
-    content: "";
-    background-color: #333399;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-h2>a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
 
 #wip1 {
     top: 30%;
@@ -153,14 +138,22 @@ h2>a:hover:before {
 
 #hamburger, #cart {
     height: 100%;
-    width: 60px;
     font-size: 42px;
-    padding: 6px;
+    padding: 12px;
     color: #333399;
+
+}
+
+#hamburger {
+    width: 60px;
+}
+
+#cart {
+    width: 90px;
 }
 
 .material-icons.md-48.blue {
-    font-size: 48px;
+    font-size: 36px;
     color: #333399;
 }
 
@@ -312,7 +305,7 @@ h2>a:hover:before {
 
 /* Snodd kod klar*/
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 600px) {
     #burgarmeny {
         display: none;
     }
@@ -324,11 +317,19 @@ h2>a:hover:before {
         top: 0px;
         right: 0px;
     }
-    #section1 {}
-    #section2 {}
 }
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 600px) {
+    #section_one {
+        background: url(../img/clouds-mobile.jpg);
+        height: 100vh;
+        background-size: 100vw;
+    }
+    #section_two {
+        background: url(../img/mountain-mobile.jpg);
+        height: 100vh;
+        background-size: 100vw;
+    }
     .knapp {
         display: none;
     }
@@ -337,11 +338,11 @@ h2>a:hover:before {
     }
     #aside {
         height: 100vh;
-        width: 500px;
+        width: 400px;
         max-width: 80vw;
         background-color: white;
         position: fixed;
-        top: 60px;
+        top: 50px;
         left: 0px;
         border: 0px;
         border-right: 1px;
