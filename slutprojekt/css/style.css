@@ -21,9 +21,7 @@ main {
     background-size: 100vw;
     background-repeat: no-repeat;
     background-attachment: absolute;
-    position: absolute;
-    left: 0px;
-    top: 0px;
+    margin: 0px;
 }
 
 #section_two {
@@ -34,10 +32,7 @@ main {
     background-size: 100vw;
     background-repeat: no-repeat;
     background-attachment: absolute;
-    position: absolute;
     margin: 0px;
-    left: 0px;
-    top: 100vh;
 }
 
 .ft {
