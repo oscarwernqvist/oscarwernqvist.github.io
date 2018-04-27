@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Suaveshop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <div class="logo">
+            <a href="index.html">
+                <h1>SUAVESHOP</h1>
+            </a>
+        </div>
+
+        <div class="knapp" id="butiker">
+            <p>Butiker</p>
+            <div class="popdown" id="bt_pd">
+                <p>hej</p>
+            </div>
+        </div>
+
+        <div class="knapp" id="kategorier">
+            <p>Kategorier</p>
+            <div class="popdown" id="kt_pd">
+                <a href="products.html">
+                    <p>Produkter</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="knapp" id="nyheter">
+            <p>Nyheter</p>
+            <div class="popdown" id="nh_pd">
+                <p>tjena</p>
+            </div>
+        </div>
+
+        <div class="mobil" id="cart">
+            <i class="material-icons md-48 blue">search</i>
+            <i class="material-icons md-48 blue">shopping_cart</i>
+        </div>
+
+        <aside id="aside">
+            <div class="knapp"><p>Butiker</p></div>
+            <div class="knapp"><p>Kategorier</p></div>
+            <div class="knapp"><p>Nyheter</p></div>
+        </aside>
+
+    </nav>
+    <main>
+        <%= yield %>
+    </main>
+       
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script src="js/js.js"></script>
+
+</html>
