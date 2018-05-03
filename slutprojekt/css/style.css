@@ -368,7 +368,15 @@ a:visited {
         border-right: 1px;
         border-color: #333399;
         border-style: solid;
+        flex-direction: column:
     }
+
+    #aside div{
+        width: 100%;
+        text-align: center;
+        height: 100px;
+    }
+
     .products {
         width: 100vw;
     }
