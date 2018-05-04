@@ -49,12 +49,17 @@ main {
     left: 0px;
 }
 
-#index_ft {
+.index_ft {
     top: 200vh;
 }
 
-#products_ft {
+.products_ft {
     top: 280vh;
+}
+
+.store_ft {
+    top: 130vh;
+
 }
 
 #ft1 {
@@ -223,6 +228,8 @@ a:visited {
     width: 200px;
     flex-direction: row;
 }
+
+
 
 /* Snodd kod nedan */
 

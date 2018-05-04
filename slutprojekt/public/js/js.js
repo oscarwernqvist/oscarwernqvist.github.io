@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
 
-    $('.popdown, aside').hide()
+    $('.popdown, aside, #SearchBar').hide()
 
 
     $('#butiker').on('click', () => {
@@ -31,10 +31,15 @@ $(document).ready(() => {
 
     });
 
+    $('#search_icon').on('click', () => {
+       /* $('#kt_pd, #bt_pd').hide();  */
+        $('#SearchBar').slideToggle(150);
+
+    });
 
 });
 
-function MVsearchFunction() {
+function SearchFunction() {
     var input, filter, ul, li, h3, i;
     input = document.getElementById('MVsearchBar');
     filter = input.value.toUpperCase();
