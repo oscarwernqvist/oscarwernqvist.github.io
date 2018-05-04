@@ -218,9 +218,10 @@ a:visited {
     height: 80%;
 }
 
-#färg{
+#farg{
     padding: 0px;
     width: 200px;
+    flex-direction: row;
 }
 
 /* Snodd kod nedan */

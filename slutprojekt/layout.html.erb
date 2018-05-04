@@ -30,7 +30,9 @@
         <div class="knapp" id="butiker">
             <p>Butiker</p>
             <div class="popdown" id="bt_pd">
-                <p>hej</p>
+                <a href=""><p>Göteborg</p></a>
+                <a href=""><p>Borås</p></a>
+                <a href=""><p>Ouagadougou</p></a>
             </div>
         </div>
 
@@ -51,8 +53,9 @@
         </div>
 
         <div class="mobil" id="cart">
-            <i class="material-icons md-48 blue">search</i>
-            <i class="material-icons md-48 blue">shopping_cart</i>
+            <i class="material-icons md-48 blue" id="search_icon">search</i>
+            <i class="material-icons md-48 blue" id="cart_icon">shopping_cart</i>
+            <input type="text" id="SearchBar" class="textinput" name="search" onkeyup="SearchFunction()" placeholder="Sök">
         </div>
 
         <aside id="aside">
