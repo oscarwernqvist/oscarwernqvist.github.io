@@ -142,11 +142,18 @@ a {
 }
 
 .wip {
+    width: 185px;
     position: relative;
     font-size: 100px;
     color: #333399;
+    transition: 1s;
 }
 
+.wip:hover {
+    border: 0px;
+    border-bottom: 5px #333399;
+    border-style: solid;
+}    
 h2 {
     text-decoration: none;
 }
@@ -221,6 +228,15 @@ a:visited {
 
 .products ul li img {
     height: 80%;
+}
+
+.storeimg{
+    height: 40vh;
+    max-width: 100%;
+}
+
+.storeimg img{
+    height: 30vh;
 }
 
 #farg{

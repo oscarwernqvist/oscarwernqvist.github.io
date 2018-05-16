@@ -142,11 +142,18 @@ a {
 }
 
 .wip {
+    width: 185px;
     position: relative;
     font-size: 100px;
     color: #333399;
+    transition: 1s;
 }
 
+.wip:hover {
+    border: 0px;
+    border-bottom: 5px #333399;
+    border-style: solid;
+}    
 h2 {
     text-decoration: none;
 }
@@ -223,13 +230,22 @@ a:visited {
     height: 80%;
 }
 
+.storeimg{
+    height: 40vh;
+    max-width: 100%;
+}
+
+.storeimg img{
+    height: 30vh;
+}
+
 #farg{
     padding: 0px;
     width: 200px;
     flex-direction: row;
 }
 
-
+/* #region snodd kod */
 
 /* Snodd kod nedan */
 
@@ -339,6 +355,9 @@ a:visited {
 }
 
 /* Snodd kod klar*/
+
+/* #endregion */ 
+
 
 @media all and (min-width: 600px) {
     #burgarmeny {

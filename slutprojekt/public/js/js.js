@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
 
-    $('.popdown, aside, #SearchBar').hide()
+    $('.popdown, aside, #SearchBar, .search_results').hide()
 
 
     $('#butiker').on('click', () => {
@@ -33,7 +33,7 @@ $(document).ready(() => {
 
     $('#search_icon').on('click', () => {
        /* $('#kt_pd, #bt_pd').hide();  */
-        $('#SearchBar').slideToggle(150);
+        $('#SearchBar, .search_results').slideToggle(150);
 
     });
 
