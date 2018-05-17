@@ -146,10 +146,11 @@ a {
     position: relative;
     font-size: 100px;
     color: #333399;
-    transition: 1s;
+    transition: border 1s;
 }
 
-.wip:hover {
+#section_one:hover #wip1, #section_two:hover #wip2{
+    transition: 1s;
     border: 0px;
     border-bottom: 5px #333399;
     border-style: solid;
