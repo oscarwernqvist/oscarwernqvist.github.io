@@ -1,12 +1,12 @@
 $(document).ready(() => {
 
 
-    $('.popdown, aside, #SearchBar, .search_results').hide()
+    $('.popdown, aside, #SearchBar, .search_results, #display_cart').hide()
 
 
     $('#butiker').on('click', () => {
 
-        $('#kt_pd, #nh_pd').hide();
+        $('#kt_pd, #nh_pd, #display_cart').hide();
         $('#bt_pd').slideToggle(150);
 
     });
@@ -20,13 +20,13 @@ $(document).ready(() => {
     });
 
     $('#kategorier').on('click', () => {
-        $('#bt_pd, #nh_pd').hide();
+        $('#bt_pd, #nh_pd, #display_cart').hide();
         $('#kt_pd').slideToggle(150);
 
     });
 
     $('#nyheter').on('click', () => {
-        $('#kt_pd, #bt_pd').hide();
+        $('#kt_pd, #bt_pd, #display_cart').hide();
         $('#nh_pd').slideToggle(150);
 
     });
@@ -34,6 +34,12 @@ $(document).ready(() => {
     $('#search_icon').on('click', () => {
        /* $('#kt_pd, #bt_pd').hide();  */
         $('#SearchBar, .search_results').slideToggle(150);
+
+    });
+
+    $('#cart_icon').on('click', () => {
+        $('.popdown, aside').hide()
+        $('#display_cart').slideToggle(150);
 
     });
 
