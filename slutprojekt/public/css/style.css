@@ -184,7 +184,7 @@ a:visited {
 }
 
 #cart {
-    width: 90px;
+    width: 48px;
 }
 
 .material-icons.md-48.blue {
@@ -245,7 +245,7 @@ a:visited {
     flex-direction: row;
 }
 
-
+/* #region snodd kod */
 
 /* Snodd kod nedan */
 
@@ -355,6 +355,9 @@ a:visited {
 }
 
 /* Snodd kod klar*/
+
+/* #endregion */ 
+
 
 @media all and (min-width: 600px) {
     #burgarmeny {
