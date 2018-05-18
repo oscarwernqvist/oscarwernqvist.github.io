@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
 
-    $('.popdown, aside, #SearchBar, .search_results, #display_cart').hide()
+    $('.popdown, aside, .search_results, #display_cart').hide()
 
 
     $('#butiker').on('click', () => {
@@ -31,12 +31,6 @@ $(document).ready(() => {
 
     });
 
-    $('#search_icon').on('click', () => {
-       /* $('#kt_pd, #bt_pd').hide();  */
-        $('#SearchBar, .search_results').slideToggle(150);
-
-    });
-
     $('#cart_icon').on('click', () => {
         $('.popdown, aside').hide()
         $('#display_cart').slideToggle(150);
@@ -47,9 +41,9 @@ $(document).ready(() => {
 
 function SearchFunction() {
     var input, filter, ul, li, h3, i;
-    input = document.getElementById('MVsearchBar');
+    input = document.getElementById('searchBar');
     filter = input.value.toUpperCase();
-    ul = document.getElementById("allul");
+    ul = document.getElementById("productsUl");
     li = ul.getElementsByTagName('li');
 
     for (i = 0; i < li.length; i++) {

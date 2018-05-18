@@ -102,19 +102,18 @@
     <main>
         <div id="productswrapper">
     <div class="filter">
-        <div class="knapp " id="farg">
-            <p>Färg</p>
-            <i class="material-icons md-48 blue">keyboard_arrow_down</i>
-            <div class="popdown" id="fr_pd">
+        <div class="knapp" id="farg">
+            <p>Färg <i class="material-icons md-48 blue">keyboard_arrow_down</i></p>
+             <div class="popdown" id="fr_pd">
                 <p>Blå</p>
             </div>
-            <i class="material-icons md-48 blue" id="search_icon">search</i>
-            <input type="text" id="SearchBar" class="textinput"  name="search" onkeyup="SearchFunction()" placeholder="Sök">
         </div>
+        <i class="material-icons md-48 blue" id="search_icon">search</i>
+        <input type="text" id="searchBar" class="textinput"  name="search" onkeyup="SearchFunction()" placeholder="Sök">
     </div>
 
-    <div class="products">
-        <ul>
+    <section class="products">
+        <ul id="productsUl">
             <li>
                 <img src="img/product.PNG" alt="">
                 <h3>Bratwurst</h3>
@@ -149,10 +148,10 @@
             </li>
             <li>
                 <img src="img/product.PNG" alt="">
-                <h3>Varmkorv</h3>
+                <h3>Salsiccia</h3>
             </li>
         </ul>
-    </div>
+    </section>
 
 
     <footer class="ft products_ft">
