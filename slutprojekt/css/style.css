@@ -39,6 +39,8 @@ main {
     position: absolute;
 }
 
+/* #region footers*/
+
 .ft {
     width: 100%;
     height: 300px;
@@ -70,6 +72,8 @@ main {
     left: 0px;
     background-color: lightgray;
 }
+
+/* #endregion */
 
 p {
     font-size: 24px;
@@ -135,10 +139,28 @@ nav {
     border-bottom: 1px;
     border-color: #333399;
     border-style: solid;
+    text-align: left;
+    padding-left: 30vw;
+    padding-top: 40px;
 }
+
+.popdown img{
+    display: block;
+    max-width: 500px;
+    max-height: 300px;
+    position: absolute;
+    top: 0px;
+    right: 50vw;
+}
+
 
 a {
     text-decoration: none;
+}
+
+a p:hover{
+    text-decoration: underline;
+    
 }
 
 .wip {
@@ -245,6 +267,23 @@ a:visited {
     width: 200px;
     flex-direction: row;
 }
+
+#display_cart{
+    background-color: white;
+    position: fixed;
+    top: 60px;
+    right: 0px;
+    height: 100vh;
+    width: 300px;
+    border: 0px;
+    border-left: 1px;
+    border-color: #333399;
+    border-style: solid;
+    padding: 20px;
+    max-width: 80vw;
+}
+
+
 
 /* #region snodd kod */
 

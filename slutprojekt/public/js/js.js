@@ -13,7 +13,7 @@ $(document).ready(() => {
 
 
     $('.hamburger').on('click', () => {
-
+        $('#display_cart').hide()
         $('aside').slideToggle(300);
         $('.hamburger').toggleClass("is-active");
 
