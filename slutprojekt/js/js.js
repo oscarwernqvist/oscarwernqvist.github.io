@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
 
-    $('.popdown, aside, .search_results, #display_cart').hide()
+    $('.popdown, aside, .search_results, #display_cart, #nyheter_ul, #kategorier_ul, #butiker_ul').hide()
 
 
     $('#butiker').on('click', () => {
@@ -37,6 +37,22 @@ $(document).ready(() => {
 
     });
 
+    // Aside-funktioner för mobil
+
+    $('#nyheter_knapp').on('click', () => {
+        $('#nyheter_ul').slideToggle(150)
+    });
+
+    $('#kategorier_knapp').on('click', () => {
+        $('#kategorier_ul').slideToggle(150)
+    });
+
+    $('#butiker_knapp').on('click', () => {
+        $('#butiker_ul').slideToggle(150)
+    });
+
+
+
 });
 
 function SearchFunction() {
@@ -54,4 +70,21 @@ function SearchFunction() {
             li[i].style.display = "none";
         }
     }
+
 }
+
+function initMap() {
+    var uluru = { lat: 57.7, lng: 11.9 };
+
+    var map = new google.maps.Map(document.getElementById('map1'), {
+        zoom: 10,
+        center: uluru
+    });
+    var marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'Gym 1'
+    });
+    marker.setMap(map);
+}
+
