@@ -1,340 +1,171 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-
-
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-    <title>Suaveshop</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,800" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-
-
-</head>
-
-
-
-<body>
-
-    <nav>
-
-
-
-        <button class="hamburger hamburger--collapse" type="button">
-
-            <span class="hamburger-box">
-
-                <span class="hamburger-inner"></span>
-
-            </span>
-
-        </button>
-
-
-
-        <div class="logo">
-
-            <a href="index.html">
-
-                <h1>SUAVESHOP</h1>
-
-            </a>
-
-        </div>
-
-
-
-        <div class="knapp" id="butiker">
-
-            <p>Butiker</p>
-
-            <div class="popdown" id="bt_pd">
-
-                <a href="goteborg.html">
-
-                    <p>Göteborg</p>
-
-                </a>
-
-                <a href="">
-
-                    <p>Borås</p>
-
-                </a>
-
-                <a href="">
-
-                    <p>Ouagadougou</p>
-
-                </a>
-
-                <img src="img/butik.jpg" alt="">
-
-            </div>
-
-        </div>
-
-
-
-        <div class="knapp" id="kategorier">
-
-            <p>Kategorier</p>
-
-            <div class="popdown" id="kt_pd">
-
-                <a href="products.html">
-
-                    <p>Alla Produkter</p>
-
-                </a>
-
-                <a href="spring.html">
-
-                    <p>Vårkollektionen</p>
-
-                </a>
-
-                <a href="korv.html">
-
-                    <p>Ny Korv</p>
-
-                </a>
-
-                <img src="img/skor.jpg" alt="">
-
-            </div>
-
-        </div>
-
-
-
-        <div class="knapp" id="nyheter">
-
-            <p>Nyheter</p>
-
-            <div class="popdown" id="nh_pd">
-
-                <a href="spring.html">
-
-                    <p>Vårkollektionen</p>
-
-                </a>
-
-                <a href="korv.html">
-
-                    <p>Ny Korv</p>
-
-                </a>
-
-                <img src="img/kavajer.jpg" alt="">
-
-            </div>
-
-        </div>
-
-
-
-        <div class="mobil" id="cart">
-
-            <i class="material-icons md-48 blue" id="cart_icon">shopping_cart</i>
-
-            <section id="display_cart">
-
-                <p>Your cart is empty</p>
-
-            </section>
-
-        </div>
-
-
-
-        <!-- Asiden är enbart för mobil -->
-
-        <aside id="aside">
-
-            <div class="asknapp">
-
-                <h2 id="butiker_knapp">Butiker</h2>
-
-                <ul id="butiker_ul">
-
-                    <li>
-
-                        <a href="goteborg.html">
-
-                            <p>Göteborg</p>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="">
-
-                            <p>Borås</p>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="">
-
-                            <p>Ouagadougou</p>
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-                <h2 id="kategorier_knapp">Kategorier</h2>
-
-                <ul id="kategorier_ul">
-
-                    <li>
-
-                        <a href="products.html">
-
-                            <p>Alla Produkter</p>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="spring.html">
-
-                            <p>Vårkollektionen</p>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="korv.html">
-
-                            <p>Ny Korv</p>
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-                <h2 id="nyheter_knapp">Nyheter</h2>
-
-                <ul id="nyheter_ul">
-
-                    <li>
-
-                        <a href="spring.html">
-
-                            <p>Vårkollektionen</p>
-
-                        </a>
-
-                    </li>
-
-                    <li>
-
-                        <a href="korv.html">
-
-                            <p>Ny Korv</p>
-
-                        </a>
-
-                    </li>
-
-                </ul>
-
-            </div>
-
-        </aside>
-
-
-
-    </nav>
-
-    <main>
-
-        <section id="section_one">
-
-    <h2 class="wip" id="wip1">
-
-        <a href="korv.html">Nytt</a>
-
-    </h2>
-
-</section>
-
-
-
-<section id="section_two">
-
-    <h2 class="wip" id="wip2">
-
-        <a href="korv.html">Ny Korv</a>
-
-    </h2>
-
-</section>
-
-
-
-
-
-<footer class="ft index_ft">
-
-    <div id="ft1"></div>
-
-    <div id="ft2">
-
-        <a href="om.html">
-
-            <p>Om oss</p>
-
-        </a>
-
-        <br>
-
-        <p>Och så vidare</p>
-
-    </div>
-
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Suaveshop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+
+        <button class="hamburger hamburger--collapse" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <div class="logo">
+            <a href="index.html">
+                <h1>SUAVESHOP</h1>
+            </a>
+        </div>
+
+        <div class="knapp" id="butiker">
+            <p>Butiker</p>
+            <div class="popdown" id="bt_pd">
+                <a href="goteborg.html">
+                    <p>Göteborg</p>
+                </a>
+                <a href="">
+                    <p>Borås</p>
+                </a>
+                <a href="">
+                    <p>Ouagadougou</p>
+                </a>
+                <img src="img/butik.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="knapp" id="kategorier">
+            <p>Kategorier</p>
+            <div class="popdown" id="kt_pd">
+                <a href="products.html">
+                    <p>Alla Produkter</p>
+                </a>
+                <a href="spring.html">
+                    <p>Vårkollektionen</p>
+                </a>
+                <a href="korv.html">
+                    <p>Ny Korv</p>
+                </a>
+                <img src="img/skor.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="knapp" id="nyheter">
+            <p>Nyheter</p>
+            <div class="popdown" id="nh_pd">
+                <a href="spring.html">
+                    <p>Vårkollektionen</p>
+                </a>
+                <a href="korv.html">
+                    <p>Ny Korv</p>
+                </a>
+                <img src="img/kavajer.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="mobil" id="cart">
+            <i class="material-icons md-48 blue" id="cart_icon">shopping_cart</i>
+            <section id="display_cart">
+                <h3>Your cart is empty</h3>
+            </section>
+        </div>
+
+        <!-- Asiden är enbart för mobil -->
+        <aside id="aside">
+            <div class="asknapp">
+                <h2 id="butiker_knapp">Butiker</h2>
+                <ul id="butiker_ul">
+                    <li>
+                        <a href="goteborg.html">
+                            <p>Göteborg</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Borås</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Ouagadougou</p>
+                        </a>
+                    </li>
+                </ul>
+                <h2 id="kategorier_knapp">Kategorier</h2>
+                <ul id="kategorier_ul">
+                    <li>
+                        <a href="products.html">
+                            <p>Alla Produkter</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="spring.html">
+                            <p>Vårkollektionen</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="korv.html">
+                            <p>Ny Korv</p>
+                        </a>
+                    </li>
+                </ul>
+                <h2 id="nyheter_knapp">Nyheter</h2>
+                <ul id="nyheter_ul">
+                    <li>
+                        <a href="spring.html">
+                            <p>Vårkollektionen</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="korv.html">
+                            <p>Ny Korv</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+    </nav>
+    <main>
+        <section id="section_one">
+    <h2 class="wip" id="wip1">
+        <a href="korv.html">Nytt</a>
+    </h2>
+</section>
+
+<section id="section_two">
+    <h2 class="wip" id="wip2">
+        <a href="korv.html">Ny Korv</a>
+    </h2>
+</section>
+
+
+<footer class="ft index_ft">
+    <div id="ft1"></div>
+    <div id="ft2">
+        <a href="om.html">
+            <p>Om oss</p>
+        </a>
+        <br>
+        <p>Och så vidare</p>
+    </div>
 </footer>
-    </main>
-
-
-
-
-
-
-
-</body>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
-<script src="js/js.js"></script>
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHm6PamchfazBfAsoFgb9NwCPue9wfj4g&callback=initMap"></script>
-
-
-
+    </main>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="js/js.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHm6PamchfazBfAsoFgb9NwCPue9wfj4g&callback=initMap"></script>
+
 </html>
