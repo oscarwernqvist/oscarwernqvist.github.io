@@ -5,6 +5,12 @@ main {
     width: 100%;
 }
 
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 100vw;
+}
+
 #productswrapper {
     flex-direction: column;
     margin: 0px;
@@ -144,11 +150,6 @@ ul {
 .logo {
     padding-left: 2vw;
     padding-right: 2vw;
-}
-
-body {
-    font-family: 'Barlow Condensed', sans-serif;
-    width: 100vw;
 }
 
 nav {
