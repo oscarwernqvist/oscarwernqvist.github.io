@@ -1,3 +1,8 @@
+body {
+    background: url("../img/tes_start.gif");
+    justify-content: center;
+}
+
 h1 {
     font-family: 'Bahiana', cursive;
     text-align: center;
@@ -10,6 +15,12 @@ h2 {
     text-align: center;
     color: #000000;
     font-size: 24px;
+}
+
+img {
+    display: block; 
+    max-width: 80vw;
+    width: 800px;
 }
 
 .fa {
