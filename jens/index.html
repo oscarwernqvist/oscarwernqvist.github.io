@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jens Fanclub</title>
+    <link rel="stylesheet" href="./css/fancypants.css" type="text/css">
+    <script type="text/javascript" src="./js/javayo.js"></script>
+
+</head>
+
+<body>
+    <audio preload="auto" autoplay loop>
+        <source src="./muziko/wiisong.mp3" type="audio/mpeg"></source>
+    </audio>
+
+    <img class="img-popout" src="img/jens2.png" alt="Jens Harro 'Legenden'" align="middle">
+ 
+    <h1 class="lefanclub">
+        <strong>
+            <em> Le fanclub de Jens </em>
+        </strong>
+    </h1>
+
+    <h2>
+        <br>
+        <br> Ce blog est un hommage à Jens, notre professeur de mathématiques.
+        <br> Le blog parle de sa personnalité, nos expériences avec lui,
+        <br> nos leçons avec lui et quelques faits sur lui.
+        <br> Nous qui écrivons ce blog nous appelons Oscar, Ludvig, Moa et Philip.
+        <br> Nous suivons le cours de français quatre, à l’école secondaire ITG-Göteborg.
+        <br> Nous allons écrire des postes tous les deux mois.
+
+    </h2>
+
+    <figure>
+        <img class="img-circle" id="myPicture" src="img/jens2.png" alt="Jens Harro 'Legenden'" align="middle">
+    </figure>
+
+    <p>
+        <strong>Le voyage quotidiens de Jens </strong>
+        <br>
+        <br> La première étape à ITG pour Jens est la descente de l’escalier.
+        Puis il va à Olivedalsgatan où il attend le tram 6 qui l’emmène à Chalmers. Après le voyage en tram il fait face
+        à la montée de l’enfer. C‘est une longue et dure rue mais Jens est un homme avec des jambes d'acier,
+        les pieds d’or et une volonté incassable. Il fixe son regard sur le sommet de la montagne,
+        et continue à marcher. Finalement il arrive à ITG, ou il est le roi du savoir. Jens a un long mais beau jour à ITG.
+        Il fait beaucoup de maths et physiques mais comme tout ce qui est bon, ça doit terminer.
+        <br>
+        <br> À 15 heures il quitte ITG et est très satisfait. Il va en tram et arrive à son appartement.
+        Pendant ce voyage de retour s’arrête à la boutique “akademi bokhandeln” et il voit s’il y a de nouvelles règles
+        ou calculettes pour ses cours. Jens n’a pas trouvé de nouvelles règles ou calculettes, mais qu'il a trouvé était
+        plus important. Il a trouvé… une site qui dit qu'il était leurs 1.000.000 visiteur et à il obtiendra une grand prix
+        de 100 mille euros!!! Jens n’a pas cru ses yeux, il a voulu danser avec plaisir.
+        Il a voyagé rapidement à sa maison avec le portable dans sa main et le sourir aux lèvres.
+
+
+    </p>
+    
+    <button onclick="
+        var str = document.getElementsByTagName('p')[0].innerHTML.substring(82);
+
+        arr = str.split(/\. |, | et /);
+        document.getElementsByTagName('p')[0].innerHTML += '<br><br>';
+        var generated_txt = arr[Math.floor(Math.random() * arr.length)];
+        while(generated_txt[0] != generated_txt[0].toUpperCase()) generated_txt = arr[Math.floor(Math.random() * arr.length)];
+        window.type(generated_txt, 0);
+        this.outerHTML = '';
+    ">Plus de le voyage</button>
+
+    <figure>
+        <img class="img-circle" id="myPicture1" src="img/jens_cowboy.png" alt="Jens Harro 'Legenden'" align="middle">
+    </figure>
+
+    <h2>
+        <a href="./julspecial/jul.html">Noël Spécial</a>
+    </h2>
+
+    <h6 class="bottomtext finfarg">
+        Des questions et des plaintes:
+        <a class="finfarg" href="mailto:oscar.wernqvist@itggot.se?Subject=Jag%20älskar%20Jens" target="_top">oscar.wernqvist@itggot.se</a>
+    </h6>
+
+
+</body>
+
+</html>
