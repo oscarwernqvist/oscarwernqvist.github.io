@@ -1,0 +1,50 @@
+/* Färger: 
+Ljusgrå: #DDDDDD;
+Mellangrå: #999999;
+Mörkgrå: #666666;
+Blekgrön: #99cc99;
+Vinröd: #663333;
+*/
+
+body {
+    background-color: #999999
+}
+
+.main {
+    background-color: #DDDDDD;
+    display: grid;
+}
+
+.mgmain {
+    margin: 0 auto;
+    background-color: #DDDDDD;
+    display: grid;
+    width: 1200px;
+    Height: 950px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:  repeat(8, 1fr);
+    grid-template-areas: 
+    "lg lg lg lg lg"       /* 1 */
+    ". . . . . ."           /* 2 */
+    ". . . . . ."       /* 3 */
+    ". . . . . ."       /* 4 */
+    ". . . . . ."       /* 5 */
+    ". . . . . ."       /* 6 */
+    ". . . . . ."       /* 7 */
+    ". . . . . ."       /* 8 */
+    ;
+
+}
+
+h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 2em;
+    color: #663333;
+}
+
+
+#logga {
+    grid-area: lg;
+    display: Grid;
+    padding-left: 5%;
+}
